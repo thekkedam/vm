@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/vipintm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://vm.thekkedam.org
+  * I am vipintm (https://keybase.io/vipintm) on keybase.
+  * I have a public key with fingerprint F2D0 5047 33DE 6EB8 B820  6A58 A701 97DA F292 A609
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010123c8dcb165e42623351f2968ce9b2a7f6a2f5a91ddca5ea1b9fe069c2b9dddd30a",
+            "fingerprint": "f2d0504733de6eb8b8206a58a70197daf292a609",
+            "host": "keybase.io",
+            "key_id": "a70197daf292a609",
+            "kid": "010123c8dcb165e42623351f2968ce9b2a7f6a2f5a91ddca5ea1b9fe069c2b9dddd30a",
+            "uid": "8856c9f98ee7ae9dfbd737f856383119",
+            "username": "vipintm"
+        },
+        "service": {
+            "hostname": "vm.thekkedam.org",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1449838908,
+    "expire_in": 157680000,
+    "prev": "9b4cbfe6847ebe13564594a4abd1a98d020ea4f0c1b17c79b90ee37de169057c",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJdSFRBFF7TSoUsJbRfqgvBRtsy939mCSR7qIcKWtCKymXmzrl629y7
+3r1rmRaRFf0HUURhVC9qET1UBEHSL5UJYg9FBdJDJYgpoiFlFM2Veuux8zLMOd/3
+ne8cztMZuaHCnPac8+9Hz7QV5HQ/upANVe3oWtkkMZc3SrEmKQmTD+zkkPETSYdL
+MQnJSFZUC3OLyYYOmmIoqqrLtkIMbAFhCjVtgyq2TonMuUV1oDIjNiCDWAojXISK
+qBSRbCdVA17ac1K+kLUVjnSkmarKwQCGGVaQQXVMTSQTk1Ohr1ADEUGsdTMBQ5hj
+NANRxxU58UlM2vsH/j/7zk7KYawbFrEJBjApEG4zbqqmLbIqVmU56JvNgJeidSDQ
+DU5ajFkn7Y1IItngWBDsNRjkL6Au6tdCMgmc1kVdr0bQ057ru5a7U1RrfT8dC8h+
+YzpA7wKW+KOTYE6Ki00KQgN4GcdNSTFZIC3fCYRlTSNYxQThiAS7044HCSdA6KaB
+kYigDTQIScI0i9lgYM0EBrKqG5pONKpRxmVKMEcKAqrZyJKZbFomYQQBqCYH2SBI
+Ny0pmKw+5UoxXdikNUIy49SkqJ/1QNr7+OG2vFBOYWja1CnBhYUKC2b9vbtLsekT
+uZFF3zuO/Gx68Owr6nMbFzz+dRJKrpWXlL6vjIfnVbcrlUNni9atrb6lzolfOrj/
+25OhlRN4zZ7dvfWVarJ+f95GR+08NDi3uXhf+vDdN5HVW/PHWz6tund0Wev9N+FT
+V8Y+jG3MH2zetLTix+zh50WLYq+u9yS+hD9WZCounxjsrz4wP7qh9Wl67fw7bT9G
+wuv7+rvxuZGC12Wx7TpZeL9qtGNJT7a8w1/eYvauOnl6+uLi2zM0fqN55kBpWIMt
+7fHOqPci0Vl6Nf7y+8R6o6t7Rc+vm+Vlm1jrseR24+K78TntB1J5JX5ysPviQNe8
+80PDp+6MtWz+fPwwbXomjRbF3/4G8P1DIg==
+=9y7U
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vipintm
+
+==================================================================
+keybase.txt 

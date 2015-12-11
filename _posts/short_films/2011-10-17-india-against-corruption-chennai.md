@@ -9,7 +9,7 @@ tags:
 - Chennai
 modified_time: '2015-12-11T06:00:47.147+05:30'
 thumbnail: https://img.youtube.com/vi/yfqUpt8qjeo/hqdefault.jpg
-embed_url: http://www.youtube.com/embed/yfqUpt8qjeo
+embed_url: "//www.youtube.com/embed/yfqUpt8qjeo"
 blogger_id: tag:blogger.com,1999:blog-4375898741014744078.post-8219886829073962348
 blogger_orig_url: http://allinone-vipintm.blogspot.com/2011/10/india-against-corruption-chennai.html
 ---
@@ -22,9 +22,9 @@ ask all viewers, do you like to see some difference or not ?
 
 I was lucky enough to contribute in this :) 
 
-{% include iframe.html url=post.embed_url %}
+{% include iframe.html url=page.embed_url %}
 
-If not playing open in  [Youtube](http://youtu.be/yfqUpt8qjeo) 
+If not playing open in  [Youtube](https://www.youtube.com/watch?v=yfqUpt8qjeo) 
 
 So i hope all you will think about this. 
 

@@ -5,6 +5,7 @@ url: "http://vm.thekkedam.org"
 # Internal nav
 nav:
   main:
+    home: "/"
     profile: "/profile"
     writing: "/writing"
 # TODO

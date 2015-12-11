@@ -29,7 +29,7 @@
     }
   };
 
-  var titlesOfAlbumsToSkip = ["Profile Photos", "Photos from posts"];
+  var titlesOfAlbumsToSkip = ["Profile Photos", "Photos from posts", "Scrapbook Photos"];
 
   var showAlbums = function(albums) {
     var albumData = _.map(albums.feed.entry, function(album) {

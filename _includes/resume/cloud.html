@@ -1,0 +1,14 @@
+{% for section_hash in blurb %}
+  {% for section in section_hash %}
+      <dl>
+       <dt>
+        <h4>{{ section[0] }}</h4>
+       </dt>
+       <dd>
+       {% for item in section[1] %}
+          <li>{{ item }}</li>
+       {% endfor %}
+       </dd>
+      </dl>
+  {% endfor %}
+{% endfor %}

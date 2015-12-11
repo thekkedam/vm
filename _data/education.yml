@@ -1,0 +1,20 @@
+- org:  Anna University
+  role: Master of Science (by Research)
+  location: Chennai, India
+  when: Jun 2010
+  bullets: 
+    - 'Faculty : Information and Communication Engineering'
+    - 'Thesis : Analysis of Open Source Drivers for IEEE 802.11 WLANs, supervised by Dr Srikanth Subramanian'
+- org: Bharathidasan University
+  role: Bachelor of Engineering (B.E)
+  location: Trichy, India
+  when: Apr 2003
+  bullets:
+    - 'Major : Electronics and Communications Engineering'
+    - 'Project : Detection and analysis of burst signal from Laser Doppler velocimeter'
+- org: Govt. Polytechnic Kunnamkulam
+  role: Diploma
+  location: Kunnamkulam, India
+  when: Apr 2000
+  bullets:
+    - 'Major : Electronics and Communications'

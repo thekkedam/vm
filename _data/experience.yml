@@ -1,0 +1,66 @@
+- org: TU Kaiserslautern 
+  group: Software Technology Group
+  role: HiWi 
+  location: Kaiserslautern, Germany
+  when: Jan 2015 - Feb 2015 
+  bullets:
+    - Implementing functionality test support in Jenkins for EU project syncFree.
+    - Implementing workflow and writing scripts to support test automation/report generation.
+- org:  embedUR systems India Ltd
+  role: Senior Software Engineer
+  location: Chennai, India
+  when: Jan 2013 - Jul 2014
+  bullets: 
+    - Responsible for software design, development and sustenance of enterprise wireless device and mentoring the team.
+    - 802.11ac (Wave 1) Access Point WiFi Regulatory domain testing codebase maintance.
+    - Design and implementation of ACL and split-tunnel for Office Extend Access Point.
+- org: embedUR systems India Ltd
+  role: Software Engineer
+  location: Chennai, India
+  when: Jul 2010 - Dec 2012
+  bullets:
+     - Responsible for software design, development and sustenance of enterprise wireless and wired device.
+     - Implementing QoS management for VOIP in Office Extend Access Point.
+     - Design and implementation of firewall for Office Extend Access Points local traffic.
+     - Software Maintenance of Enforcement Policy Management module for switch/router.
+     - Software Maintenance of Legacy Wireless LAN Controller and Mesh Access Points.
+- org:  AU-KBC Research Centre
+  group: Wireless Communications Research Group
+  role: Research Engineer
+  location: Chennai, India
+  when: Jul 2006 - Jun 2010
+  bullets:
+     - Involved in research, development and testing of wireless systems, and training and guiding wireless test teams.
+     - Developing a new protocol for fault tolerant ad-hoc routing in wireless network.
+     - Design and development of a tool to analyse the per-packet response of wireless devices.
+     - Development and testing of outdoor WLAN for coverage extension in realistic environment.
+     - Guidance to set up WiFi pre-certification test lab at Indium Software.
+     - Corporate course content preparation and teaching assistance in IEE 802.11 MAC layer concepts.
+     - Research on scheduling power save in IEEE 802.11n WLANs.
+- org: AU-KBC Research Centre
+  group: Cryptography and Network Security Group
+  role: Research Engineer
+  location: Chennai, India
+  when: Apr 2004 - Jun 2006
+  bullets:
+     - Involved in software development and testing, and guiding undergraduate students.
+     - Developing a fast method for remote file integrity check and providing proof of concept.
+     - Development of WebGuard (a web server defacement protector) monitoring system.
+     - Design and development of a prototype for Dynamic Password Authentication Token.
+- org: AU-KBC Research Centre
+  role: System Administrator
+  location: Chennai, India
+  when: Apr 2004 - Jun 2010
+  bullets:
+     - Worked part time in maintenance/design/deployment of network/system infrastructure.
+     - Configuring, troubleshooting and automating management process of Linux based servers.
+     - Configuring and managing firewall/gateway policies.
+     - Setting up labs and providing guidance for hands on training in faculty training programs as part of National Resource Centre for Free and Open Source Software (NRCFOSS).
+- org: National Aerospace Laboratories
+  group: Experimental Aerodynamics Division
+  role: Project Intern
+  location: Banglore, India
+  when: Jan 2003 - Mar 2003
+  bullets:
+     - Bachelor final year project.
+     - Software for detection and analysis of burst signal from laser doppler velocimeter.

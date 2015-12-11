@@ -1,0 +1,39 @@
+---
+layout: default
+title: "Vipin Madhavanunni: Profile"
+header_title: Profile
+include_header: profile_header.html
+nav_item: profile
+---
+  <a href="{{ site.resume_path }}" target="_blank" class="sm-col-right col dark-gray width-120">
+    <i class="fa fa-fw fa-lg fa-download"></i>
+    <span class="h6">PDF CV</span>
+  </a>
+  <a href="{{ site.resume_src }}" target="_blank" class="sm-col-right col dark-gray width-120">
+    <i class="fa fa-fw fa-lg fa-github-square"></i>
+    <span class="h6">latex CV</span>
+  </a>
+<!--
+  <div class="circle-line-image center mt1">
+    <a href="{{ site.baseurl }}">
+      {% include image.html path=site.thumbnail_path alt=site.name class="border bg-white border-light-gray circle square-100" %}
+    </a>
+  </div>
+-->
+  {% for section in site.data.sections %}
+    <div class="border-bottom border-light-gray mt4 mb4 pb3 circle-line">
+            <h3 id="{{ section.id }}">
+                {{ section.name }}
+            </h3>
+            {% capture section_layout %}resume/{{section.layout}}.html{% endcapture %}
+            {% for hash in site.data %}
+              {% if hash[0] == section.id %}
+                {% assign blurb = hash[1] %}
+                {% include {{section_layout}} %}
+              {% endif %}
+            {% endfor %}
+    </div>
+  {% endfor %}
+<!--
+  <div class="mt4">{% include profile-share.html %}</div>
+-->

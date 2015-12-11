@@ -1,17 +1,17 @@
 <div class="clearfix mxn2">
   <div class="col sm-col-9 px2">
-    <h3 class="mb2">About me</h3>
-    <p>
-      Hi, I am Vipin Madhavanunni. I loves programming, traveling, and 
-      and thinking. I worked as a Software Engineer for past 4 years,
-      and privious to that i was a Research engineer and  
-      got Masters from Anna University Chennai. 
-      For more info, check out his 
-      <a href="{{ site.nav.main.writing }}">writing</a>, 
-      <a href="{{ site.nav.main.speaking }}">speaking</a>,
-      <a href="{{ site.nav.main.projects }}">projects</a>, and 
-      <a href="{{ site.nav.main.photos }}">photos</a>.
-    </p>  
+    {% for section in site.data.about %}
+    <h3 class="mb2">{{ section[0] }}</h3>
+      {% for bullet in section[1] %}
+      	<p>
+         {{ bullet }}
+      	</p>
+      {% endfor %}
+    {% endfor %}  
+    <h3 class="mb2">Recent posts</h3>
+    {% for post in site.posts limit:2 %}
+      <a href="{{ post.url }}">{{ post.title }}</a><br>
+    {% endfor %}
   </div>
   <div class="col sm-col-3 px2">
     <h3 class="mb2">Contact</h3>

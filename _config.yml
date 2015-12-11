@@ -5,9 +5,11 @@ url: "http://vm.thekkedam.org"
 # Internal nav
 nav:
   main:
+    profile: "/profile"
     writing: "/writing"
-    speaking: "/speaking"
-    projects: "/projects"
+# TODO
+#    speaking: "/speaking"
+#    projects: "/projects"
     photos: "/photos"
   writing:
     all: "/writing"
@@ -17,15 +19,19 @@ nav:
 
 # Bio settings
 name: "Vipin Madhavanunni"
-slogan: "Programmer, traveler, Hiker, dreamer"
-description: "The home page of Vipin Madhavanunni, and software engineer."
+slogan: "Programmer, traveler, Hiker and dreamer"
+description: "The home page of Vipin Madhavanunni."
 thumbnail_path: "vipintm-medium.jpg"
-bitcoin_address: "1PntwKCSQahUzr7KThduA59R1QW8B3zrAz"
+bitcoin_address: "1DyKgHsw6uwxGq3apy4mwqG6DtCayj4bfm"
 unws_startup_url: "http://www.unwsolution.com/"
 website_repo_url: "https://github.com/thekkedam/vm.thekkedam.org"
 olt_url: "http://www.onceinlifetime.com/"
 embedur_url: "http://embedur.com/"
 aukbc_url: "http://www.au-kbc.org/comm/"
+
+# Profile
+resume_path: "https://www.sharelatex.com/github/repos/vipintm/cv/builds/latest/output.pdf"
+resume_src: "https://github.com/vipintm/cv"
 
 # URLs
 contact_urls:  
@@ -38,6 +44,10 @@ contact_urls:
     url: "https://www.linkedin.com/in/vipintm"
     label: "LinkedIn"
     icon: "linkedin-square"
+  xing:
+    url: "https://www.xing.com/profile/Vipin_Madhavanunni"
+    label: "Xing"
+    icon: "xing-square"
   facebook: 
     url: "https://www.facebook.com/vipintm"
     label: "Facebook"
@@ -46,10 +56,6 @@ contact_urls:
     url: "https://plus.google.com/+VipinM/"
     label: "Google+"
     icon: "google-plus-square"
-  slideshare: 
-    url: "https://www.slideshare.net/vipintm"
-    label: "SlideShare"
-    icon: "slideshare"
   github: 
     url: "https://github.com/vipintm/"
     label: "GitHub"
@@ -59,6 +65,14 @@ contact_urls:
     label: "Email"
     value: "vipintm@gmail.com"
     icon: "envelope-square"
+  inum:
+    url: "tel:+883510001197378"
+    label: "Inum"
+    icon: "phone-square"
+  keybase:
+    url: "https://keybase.io/vipintm"
+    label: "Verified"
+    icon: "user-secret"
 
 # Jekyll build settings
 paginate: 10

@@ -18,7 +18,7 @@ The second attempt of a short film was for a social cause, this time its about
 the garbage dumping. The aim of this is to make government and people aware of 
 the reality of people leaving around the dump yards. 
 
-{% include iframe.html url=embed_url %}
+{% include iframe.html url=post.embed_url %}
 
 If you are unable to watch here please click the youtube link [Power Of 
 Unity](http://www.youtube.com/watch?v=HCNY48AcLiM) 

@@ -22,7 +22,7 @@ ask all viewers, do you like to see some difference or not ?
 
 I was lucky enough to contribute in this :) 
 
-{% include iframe.html url=embed_url %}
+{% include iframe.html post.url=embed_url %}
 
 If not playing open in  [Youtube](http://youtu.be/yfqUpt8qjeo) 
 

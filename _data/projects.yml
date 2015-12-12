@@ -1,14 +1,28 @@
-- name: "Test Project"
-  name_long: "Explanation on test project"
-  id: "ankor"
-  org: "Place"
-  date: "From-To"
+- name: "DPAT"
+  name_long: "Dynamic Password Authentication Tool"
+  id: "dpat"
+  org: "CNSG, AU-KBC Research Centre"
+  date: "Apr 2004 - May 2004"
   description: |
-     The explanation of the project. Multiple lines and details
-  url: "http://project.com/"
-  url_label: "Project Homepage"
-  src_url: "https://github.com/project/repo"
-  src_label: "Project github"
-  doc_url: "http://test.url.pdg" 
-  doc_label: "Test doc"
-  image: "NoImage.png"
+     In-house project to build a framework for the second-factor Authentication 
+     token (internal and remote access). The system supports soft token 
+     available and hardware token. The hardware system was build USB compatible. 
+  url: "http://www.au-kbc.org/crypto.htm#DPAT"
+  url_label: "Details at AU-KBC Site"
+  image: "dpat.jpg"
+- name: "LDV Signal Analysis"
+  name_long: "Detection and Analysis of Burst Signal from Laser Doppler Velocimeter"
+  id: "velocimeter"
+  org: "EAD, NAL"
+  date: "Jan 2003 - Mar 2003"
+  description: |
+     This project carried out as Bachelor thesis. Implementation of double clipped
+     autocorrelation and FFT with burst detection in LabView. This provides a tool
+     to simulate and process live stream of data from DAQ. The data acquired is
+     used to compare both approaches and give a better idea for further improvement.
+  src_url: "https://github.com/vipintm/dca"
+  src_label: "LabView VIs in github"
+  doc_url: "/assets/docs/thesis/Detection_and_Analysis_Of_Burst_Signal_from_Laser_Doppler_Velocimeter_Vipin_Madhavanunni.pdf"
+  doc_label: "Thesis Report"
+  image: "burst.png"
+

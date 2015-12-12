@@ -7,10 +7,10 @@ nav:
   main:
     home: "/"
     profile: "/profile"
+    projects: "/projects"
     writing: "/writing"
 # TODO
 #    speaking: "/speaking"
-#    projects: "/projects"
     photos: "/photos"
   writing:
     all: "/writing"
@@ -62,9 +62,9 @@ contact_urls:
     label: "GitHub"
     icon: "github-square"
   email: 
-    url: "mailto:vipintm@gmail.com"
+    url: "mailto:vipmadha@gmail.com"
     label: "Email"
-    value: "vipintm@gmail.com"
+    value: "vipmadha@gmail.com"
     icon: "envelope-square"
   inum:
     url: "tel:+883510001197378"

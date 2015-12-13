@@ -8,6 +8,7 @@ tags:
 modified_time: '2008-11-26T08:47:55.361+05:30'
 blogger_id: tag:blogger.com,1999:blog-8747000.post-4215524993102387675
 blogger_orig_url: http://cblog.pattu.thekkedam.com/2008/11/my-geek-code.html
+thumbnail_path: "blog/Geek-Code/geek.png"
 ---
 
 > It is nice to get a abstract understanding of any one just by reading some letters and signs. 

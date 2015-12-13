@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Approximate mechanism for measuring Stability of Internet Link in aggregated
-  Internet Pipe
+title: Measuring Stability of Internet Links
 date: '2009-02-20T00:05:00.033+05:30'
 author: Vipin Madhavanunni
 tags:
@@ -12,8 +11,6 @@ modified_time: '2009-08-07T12:19:43.434+05:30'
 blogger_id: tag:blogger.com,1999:blog-8747000.post-2083794857576983858
 blogger_orig_url: http://cblog.pattu.thekkedam.com/2009/02/approximate-mechanism-for-measuring.html
 ---
-
-## Abstract
 
 In this article we propose a method for 
 measuring internet connection stability which is fast and has negligible 

@@ -16,8 +16,8 @@ thumbnail_path: "blog/My-heart-beating-finished-957226755/heart.png"
 
 {% include image.html path=page.thumbnail_path alt="My heart beating finished 957226755" %}
 
-I didn't feel like telling today is my birth day, I feel i lost another year. 
-Instead of that My heart beating finished 957226755 times, Showing i archived a lot in my life. 
+I didn't feel like telling today is my birth day, I feel like lost another year. 
+Instead of that My heart beating finished 957226755 times. 
 
 {% include hartbets.html %}
 

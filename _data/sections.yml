@@ -6,11 +6,11 @@
 
 - name: Experience
   id: experience
-  layout: block
+  layout: experience
 
 - name: Education
   id: education
-  layout: block
+  layout: education
 
 #- name: Projects
 #  id: projects
@@ -18,15 +18,15 @@
 
 - name: Publications
   id: publications
-  layout: list
+  layout: publications
 
 - name: Talks
   id: talks
-  layout: list
+  layout: talks
 
 - name: Skills
   id: skills
-  layout: cloud
+  layout: skills
 
 - name: Other
   id: other

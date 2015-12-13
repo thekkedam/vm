@@ -22,9 +22,9 @@ nav_item: profile
 -->
   {% for section in site.data.sections %}
     <div class="border-bottom border-light-gray mt4 mb4 pb3 circle-line">
-            <h3 id="{{ section.id }}">
+            <h4 id="{{ section.id }}">
                 {{ section.name }}
-            </h3>
+            </h4>
             {% capture section_layout %}resume/{{section.layout}}.html{% endcapture %}
             {% for hash in site.data %}
               {% if hash[0] == section.id %}

@@ -8,7 +8,7 @@ nav:
     home: "/"
     profile: "/profile"
     projects: "/projects"
-    writing: "/writing"
+    posts: "/writing"
 # TODO
 #    speaking: "/speaking"
     photos: "/photos"
@@ -72,7 +72,7 @@ contact_urls:
     icon: "phone-square"
   keybase:
     url: "https://keybase.io/vipintm"
-    label: "Verified"
+    label: "Keybase"
     icon: "user-secret"
 
 # Jekyll build settings

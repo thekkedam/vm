@@ -12,9 +12,9 @@
   id: education
   layout: education
 
-#- name: Projects
-#  id: projects
-#  layout: project
+- name: Projects
+  id: projects
+  layout: project
 
 - name: Publications
   id: publications

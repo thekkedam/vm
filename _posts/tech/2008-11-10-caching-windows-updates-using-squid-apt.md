@@ -7,6 +7,7 @@ tags:
 - squid
 - Windows
 - Tech
+add_to_popular_list: true
 modified_time: '2008-11-10T12:06:55.924+05:30'
 blogger_id: tag:blogger.com,1999:blog-8747000.post-1811315844838996113
 blogger_orig_url: http://cblog.pattu.thekkedam.com/2008/11/caching-windows-updates-using-squid-apt.html

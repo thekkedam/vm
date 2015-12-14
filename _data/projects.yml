@@ -1,12 +1,40 @@
+- name: "W-Meter"
+  name_long: "Tool for testing the conformance and evaluating the performance of 802.11 products"
+  id: "w-meter"
+  org: "WCRG, AU-KBC Research Centre"
+  date: "2009"
+  description: |
+    The tool is meant for injecting arbitrary frames to test the conformance 
+    of any WiFi product. The tool has templates for generating various frames 
+    which can be customized for generating valid and invalid frames. The tool 
+    can be used to elicit responses from other WiFi cards to check the 
+    conformance of the card to the protocol. 
+  url: "https://sourceforge.net/projects/w-meter/"
+  url_label: "Initial release of public code at SF"
+  image: "w-meter.png"
+- name: "WebGuard"
+  name_long: "A Hardware Solution that eliminates web defacing"
+  id: "webguard"
+  org: "CNSG, AU-KBC Research Centre"
+  date: "2005"
+  description: |
+     WebGuard  is a unique hardware solution to the problem of web page defacing, 
+     and it sits between the firewall and the server it is meant to protect. 
+     The system is IP transparent and act as invisible content inspection engine. 
+     Cryptographic content verification to protect the integrity content. 
+     Contents  verified in Real Time, constantly and consistently.
+  url: "http://www.au-kbc.org/crypto.htm#WebGuard"
+  url_label: "Details at AU-KBC Site"
+  image: "webguard.jpg"
 - name: "DPAT"
   name_long: "Dynamic Password Authentication Tool"
   id: "dpat"
   org: "CNSG, AU-KBC Research Centre"
-  date: "Apr 2004 - May 2004"
+  date: "2004"
   description: |
-     In-house project to build a framework for the second-factor Authentication 
-     token (internal and remote access). The system supports soft token 
-     available and hardware token. The hardware system was build USB compatible. 
+     In-house project to build a framework for the second-factor Authentication
+     token (internal and remote access). The system supports soft token
+     available and hardware token. The hardware system was build USB compatible.
   url: "http://www.au-kbc.org/crypto.htm#DPAT"
   url_label: "Details at AU-KBC Site"
   image: "dpat.jpg"

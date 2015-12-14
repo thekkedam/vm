@@ -1,0 +1,24 @@
+---
+layout: default
+title: "Vipin Madhavanunni: About This Site"
+header_title: About This Site
+include_header: about_header.html
+nav_item: about
+---
+<div class="clearfix mxn2">
+  <div class="col sm-col-9 px2">
+    
+    <p><a href="{{ site.url }}">{{ site.url }}</a> is:</p>
+    
+      <ul class="list-unstyled">
+  	{% for section in site.data.about %}
+	     {% if section[0] == 'about' %}
+  		{% for bullet in section[1] %}
+      			<li>{{ bullet }}</li>
+		{% endfor %}
+             {% endif %}
+  	{% endfor %}
+      </ul> 
+  
+  </div>
+</div>

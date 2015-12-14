@@ -2,6 +2,9 @@
   <div class="sm-col px2">
     &copy; {{ site.time | date: "%Y" }} {{ site.name }}.    
   </div>
+  <div class="sm-col px2">
+    <a href="{{ site.about }}">About</a>
+  </div>
   <div class="sm-col-right px2">
     {% for external_url_hash in site.contact_urls %}
       {% assign external_url = external_url_hash[1] %}

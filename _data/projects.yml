@@ -1,3 +1,19 @@
+- name: "ABTR"
+  name_long: "Ad Hoc Binary tree routing"
+  id: "abtr"
+  org: "WCRG,AU-KBC Research Centre"
+  date: "2008"
+  description: |
+     The mobile nodes may dynamically enter or leave the ad hoc
+     network. To improve the resilience of the ad-hoc networks to
+     mobility, node and link failure, we build an algorithm
+     involving binary trees and a special form of cycles in the
+     network graph subject to constraints in topology and use this
+     information to re-route packets from source to destination when
+     interconnecting links or nodes fail.
+  doc_url: "/assets/docs/publications/Building_Reliable_and_Fault_Resilient_Mobile_Ad-Hoc_Networks_Vipin_Madhavanunni.pdf"
+  doc_label: "Publication"
+  image: "NoImage.png"
 - name: "W-Meter"
   name_long: "Tool for testing the conformance and evaluating the performance of 802.11 products"
   id: "w-meter"
@@ -12,6 +28,20 @@
   url: "https://sourceforge.net/projects/w-meter/"
   url_label: "Initial release of public code at SF"
   image: "w-meter.png"
+- name: "RFiC"
+  name_long: "Tool for Remote File Integrity Check"
+  id: "rfic"
+  org: "AU-KBC Research Centre"
+  date: "2008"
+  description: |
+    Checking the integrity of a file on a remote untrusted or compromised 
+    server is to be achieved with minimal computational and storage 
+    requirements on part of a healthy verifier. A fast protocol 
+    comprising of maximum period linear congruence generators and linear 
+    feedback shift registers with compact storage requirements is used.    
+  doc_url: "/assets/docs/publications/A_Time_and_Storage_Efficient_Solution_to_Remote_File_Integrity_Check_Vipin_Madhavanunni.pdf"
+  doc_label: "Publication"
+  image: "rfic.jpg"
 - name: "WebGuard"
   name_long: "A Hardware Solution that eliminates web defacing"
   id: "webguard"

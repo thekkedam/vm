@@ -13,10 +13,16 @@ nav:
 #    speaking: "/speaking"
     photos: "/photos"
   writing:
-    all: "/writing"
-    popular: "/writing/popular"
+    articles: "/writing/articles"
+    poems: "/writing/poems"
+    travel: "/writing/travel"
+    favorite: "/writing/popular"
     tags: "/writing/tags"
+    all: "/writing"
     rss: "/feed.xml"
+
+# About
+about: "/about"
 
 # Bio settings
 name: "Vipin Madhavanunni"

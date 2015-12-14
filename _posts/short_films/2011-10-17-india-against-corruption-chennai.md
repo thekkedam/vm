@@ -28,4 +28,4 @@ If not playing open in  [Youtube](https://www.youtube.com/watch?v=yfqUpt8qjeo)
 
 So i hope all you will think about this. 
 
->> **Its all in your hand, Say NO to Corruption** 
+> **Its all in your hand, Say NO to Corruption** 

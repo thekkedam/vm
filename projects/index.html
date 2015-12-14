@@ -8,13 +8,23 @@ nav_item: projects
 {% for project in site.data.projects %}
   <div class="mxn2 clearfix mb2 border-bottom border-light-gray circle-line py3">
     <div class="col sm-col-4 px2 mb2">
+<!--
       <a href="{{ project.url }}" target="_blank">
+-->
         {% capture image_path %}projects/{{ project.image }}{% endcapture %}
         {% include image.html path=image_path alt=project.name %}
+<!--
       </a>
+-->
     </div>
     <div class="col sm-col-8 px2">
-      <a href="{{ project.url }}" target="_blank" name="{{ project.name | downcase | replace:' ','-' | remove:',' }}"><h2 class="mt0 mb0">{{ project.name }}</h2></a>
+<!--
+      <a href="{{ project.url }}" target="_blank" name="{{ project.name | downcase | replace:' ','-' | remove:',' }}">
+-->
+         <h2 class="mt0 mb0">{{ project.name }}</h2>
+<!--
+      </a>
+-->
       <h5>{{ project.name_long }}</h5>
       {% if project.org != null %}
         <i class="fa fa-fw fa-lg fa-building-o"></i>

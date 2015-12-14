@@ -13,7 +13,7 @@
      interconnecting links or nodes fail.
   doc_url: "/assets/docs/publications/Building_Reliable_and_Fault_Resilient_Mobile_Ad-Hoc_Networks_Vipin_Madhavanunni.pdf"
   doc_label: "Publication"
-  image: "NoImage.png"
+  image: "abtr.png"
 - name: "W-Meter"
   name_long: "Tool for testing the conformance and evaluating the performance of 802.11 products"
   id: "w-meter"

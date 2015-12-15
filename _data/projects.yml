@@ -1,3 +1,17 @@
+- name: "W-Meter"
+  name_long: "Tool for testing the conformance and evaluating the performance of 802.11 products"
+  id: "w-meter"
+  org: "WCRG, AU-KBC Research Centre"
+  date: "2009"
+  description: |
+    The tool is meant for injecting arbitrary frames to test the conformance 
+    of any WiFi product. The tool has templates for generating various frames 
+    which can be customized for generating valid and invalid frames. The tool 
+    can be used to elicit responses from other WiFi cards to check the 
+    conformance of the card to the protocol. 
+  url: "https://sourceforge.net/projects/w-meter/"
+  url_label: "Initial release of public code at SF"
+  image: "w-meter.png"
 - name: "ABTR"
   name_long: "Ad Hoc Binary tree routing"
   id: "abtr"
@@ -14,20 +28,6 @@
   doc_url: "/assets/docs/publications/Building_Reliable_and_Fault_Resilient_Mobile_Ad-Hoc_Networks_Vipin_Madhavanunni.pdf"
   doc_label: "Publication"
   image: "abtr.png"
-- name: "W-Meter"
-  name_long: "Tool for testing the conformance and evaluating the performance of 802.11 products"
-  id: "w-meter"
-  org: "WCRG, AU-KBC Research Centre"
-  date: "2009"
-  description: |
-    The tool is meant for injecting arbitrary frames to test the conformance 
-    of any WiFi product. The tool has templates for generating various frames 
-    which can be customized for generating valid and invalid frames. The tool 
-    can be used to elicit responses from other WiFi cards to check the 
-    conformance of the card to the protocol. 
-  url: "https://sourceforge.net/projects/w-meter/"
-  url_label: "Initial release of public code at SF"
-  image: "w-meter.png"
 - name: "RFiC"
   name_long: "Tool for Remote File Integrity Check"
   id: "rfic"

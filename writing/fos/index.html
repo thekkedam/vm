@@ -10,9 +10,15 @@ include_comments:
 ---
 
 {% include writing-nav.html %}
-
-{% for post in site.posts %}
-  {% if post.tags contains 'Fraction of Second' %}  
-    {% include post-outline.html post=post %}
-  {% endif %}
-{% endfor %}
+<br>
+<section class="no-padding" id="portfolio">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+	{% for post in site.posts %}
+  	    {% if post.tags contains 'Fraction of Second' %}  
+                {% include photo-outline.html post=post %}
+            {% endif %}
+        {% endfor %}
+    </div>
+  </div>
+</section>

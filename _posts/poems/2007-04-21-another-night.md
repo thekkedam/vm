@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: poem
 title: Another night
 date: '2007-04-21T00:52:00.002+05:30'
 author: Vipin Madhavanunni
@@ -13,9 +13,7 @@ blogger_id: tag:blogger.com,1999:blog-6224281097541434274.post-46046184877452106
 blogger_orig_url: http://poems.pattu.thekkedam.com/2007/04/another-night.html
 thumbnail_path: "blog/Another-night/night.jpg"
 ---
-{% include image.html path=page.thumbnail_path alt="I am in love ?" %}
 <pre>
-
 I met her on the street, 
 The day was new to me. 
 A new way in front of me, 
@@ -34,7 +32,6 @@ The rules of nature were the same,
 But god blessed me. 
 With the light of moon, 
 Soft and gentle light.
-
 </pre>
 
 <pre>

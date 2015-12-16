@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: poem 
 title: I am in love ?
 date: '2006-09-14T23:14:00.000+05:30'
 author: Vipin Madhavanunni
@@ -12,9 +12,7 @@ blogger_id: tag:blogger.com,1999:blog-6224281097541434274.post-62634525546226105
 blogger_orig_url: http://poems.pattu.thekkedam.com/2006/09/i-am-in-love.html
 thumbnail_path: "blog/i-am-in-love/BlueSky.jpg"
 ---
-{% include image.html path=page.thumbnail_path alt="I am in love ?" %}
 <pre>
-
 The day I felt, I started,
 And I kept on searching. 
 
@@ -32,7 +30,6 @@ And still searching.
 
 When looking to another side,
 I feel missed, may be, may not, still I don't know?
-
 </pre>
 
 <pre>

@@ -14,4 +14,4 @@ thumbnail_path: "blog/Fraction-of-Second/door.jpg"
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/vipintm/6272092930/in/dateposted-public/" title="Diversity in India"><img src="https://farm7.staticflickr.com/6057/6272092930_10b7a6d6cd_o.jpg" width="4064" height="2634" alt="Diversity in India"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 <pre>
 Diversity in India ...
-<pre> 
+</pre> 

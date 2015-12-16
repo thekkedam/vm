@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: poem
 title: Colour of Shadow
 date: '2007-05-17T17:13:00.000+05:30'
 author: Vipin Madhavanunni
@@ -12,9 +12,7 @@ blogger_id: tag:blogger.com,1999:blog-6224281097541434274.post-24915204264813473
 blogger_orig_url: http://poems.pattu.thekkedam.com/2007/05/colour-of-shadow.html
 thumbnail_path: "blog/Colour-of-Shadow/shadow.jpg"
 ---
-{% include image.html path=page.thumbnail_path alt="I am in love ?" %}
 <pre>
-
 I never change color, 
 I was behind in morning, 
 Then i was around, 
@@ -22,7 +20,6 @@ I was in front for evening,
 
 I don't have any name, 
 I am known as shadow. 
-
 </pre>
 
 <pre>

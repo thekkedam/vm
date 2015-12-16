@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: poem
 title: Dreams of love
 date: '2007-08-24T13:16:00.000+05:30'
 author: Vipin Madhavanunni
@@ -12,9 +12,7 @@ blogger_id: tag:blogger.com,1999:blog-6224281097541434274.post-78473486012848006
 blogger_orig_url: http://poems.pattu.thekkedam.com/2007/08/dreams-of-love.html
 thumbnail_path: "blog/Dreams-of-love/balloon.jpg"
 ---
-{% include image.html path=page.thumbnail_path alt="Dreams of love" %}
 <pre>
-
 Dreams of love takes me to heaven, 
 Brings blushes in my face. 
 Feel every second as new, 
@@ -38,7 +36,6 @@ I know she will be happy the next day.
 She will never ask what happened last day. 
 She know i am the truth and she is my love, 
 But i don't know, who she is. 
-
 </pre>
 
 <pre>

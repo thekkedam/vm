@@ -9,17 +9,18 @@ nav:
     profile: "/profile"
     projects: "/projects"
     posts: "/writing"
-# TODO
-#    speaking: "/speaking"
+#   speaking: "/speaking"
     photos: "/photos"
   writing:
+    favorite: "/writing/popular"
     articles: "/writing/articles"
     poems: "/writing/poems"
     travel: "/writing/travel"
-    favorite: "/writing/popular"
+    fos: "/writing/fos"
+    video: "/writing/video"    
+    wish: "/writing/wish"
     tags: "/writing/tags"
     all: "/writing"
-    rss: "/feed.xml"
 
 # About
 about: "/about"
@@ -55,6 +56,10 @@ contact_urls:
     url: "https://www.xing.com/profile/Vipin_Madhavanunni"
     label: "Xing"
     icon: "xing-square"
+  angel:
+    url: "https://angel.co/vipintm"
+    label: "angel.co"
+    icon: "angellist"
   facebook: 
     url: "https://www.facebook.com/vipintm"
     label: "Facebook"
@@ -63,6 +68,10 @@ contact_urls:
     url: "https://plus.google.com/+VipinM/"
     label: "Google+"
     icon: "google-plus-square"
+  feed:
+    url: "/feed.xml"
+    label: "Feed"
+    icon: "rss-square"
   github: 
     url: "https://github.com/vipintm/"
     label: "GitHub"

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Vipin Madhavanunni: Favorite Writing"
-nav_item: writing   
-nav_item_writing: popular 
-header_title: Favorite posts
+title: "Vipin Madhavanunni: Fraction of Second"
+nav_item: fos
+nav_item_writing: fos 
+header_title: Fraction of Second
 include_header: writing_header.html
 include_comments:
   count: true
@@ -12,8 +12,7 @@ include_comments:
 {% include writing-nav.html %}
 
 {% for post in site.posts %}
-  {% if post.add_to_popular_list %}  
+  {% if post.tags contains 'Fraction of Second' %}  
     {% include post-outline.html post=post %}
   {% endif %}
 {% endfor %}
-

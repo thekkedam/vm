@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Vipin Madhavanunni: Poems"
-nav_item: poems   
-nav_item_writing: poems 
-header_title: Poems
-include_header: writing_header.html
+title: "Vipin Madhavanunni: Wish"
+nav_item: wish
+nav_item_writing: wish
+header_title: Wish
+include_header: wish_header.html
 include_comments:
   count: true
 ---
@@ -12,7 +12,7 @@ include_comments:
 {% include writing-nav.html %}
 
 {% for post in site.posts %}
-  {% if post.tags contains 'Poem' %}  
+  {% if post.tags contains 'Wish' %}  
     {% include post-outline.html post=post %}
   {% endif %}
 {% endfor %}

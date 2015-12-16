@@ -1,0 +1,15 @@
+- name: "WISH"
+  name_long: "A wish, i have to fill this"
+  id: "wish1"
+  type: "write"
+  date: "2009"
+  description: |
+    A lot to write.
+  url: "http://www.wishlink.com/wish"
+  url_label: "Wish link"
+  doc_url: "/assets/docs/wish/wish.pdf"
+  doc_label: "Wish doc"
+  w_url: "/writing/wish-somthing/"
+  w_label: "Wish blog"
+  image: "NoImage.png"
+

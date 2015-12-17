@@ -1,6 +1,9 @@
 <footer class="sticky-footer border-top border-light-gray gray h6">
   <div class="sm-col px2">
-    &copy; {{ site.time | date: "%Y" }} {{ site.name }}.    
+    &copy; {{ site.time | date: "%Y" }} {{ site.name }}
+  </div>
+  <div class="sm-col px2">
+    Page generated at {{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}
   </div>
   <div class="sm-col px2">
     <a href="{{ site.about }}">About</a>

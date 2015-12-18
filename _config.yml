@@ -68,6 +68,10 @@ contact_urls:
     url: "https://plus.google.com/+VipinM/"
     label: "Google+"
     icon: "google-plus-square"
+  lastfm:
+    url: "http://www.last.fm/user/vipintm"
+    label: "Last.fm"
+    icon: "lastfm-square"
   feed:
     url: "/feed.xml"
     label: "Feed"
@@ -91,7 +95,7 @@ contact_urls:
     icon: "user-secret"
 
 # Jekyll build settings
-paginate: 10
+paginate: 6
 paginate_path: "/writing/page:num"
 permalink: "/writing/:year/:month/:day/:title"
 sass:

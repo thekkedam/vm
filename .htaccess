@@ -1,9 +1,34 @@
 ---
 ---
-
 RewriteEngine On
 RewriteBase /
 
-{% for post in site.categories.post %}
-  RewriteRule ^{{ post.original }} {{ post.permalink }} [R=301,L]
+{% for event in site.data.publications %}
+  {% for section_hash in event %}
+      {% for section in section_hash %}
+              {% if section.id != null %}
+                  {% if section.pdf != null %}
+RewriteRule ^/doc-{{ event[0] }}-{{ section.id }}.pdf {{ section.pdf }} [R=301,L]
+                  {% endif %}
+              	  {% if section.presentation != null %}
+RewriteRule ^/pre-{{ event[0] }}-{{ section.id }}.pdf {{ section.presentation }} [R=301,L]
+                  {% endif %}
+              {% endif %}
+       {% endfor %}
+  {% endfor %}
+{% endfor %}
+
+{% for event in site.data.talks %}
+  {% for section_hash in event %}
+      {% for section in section_hash %}
+              {% if section.id != null %}
+                  {% if section.pdf != null %}
+RewriteRule ^/doc-{{ event[0] }}-{{ section.id }}.pdf {{ section.pdf }} [R=301,L]
+                  {% endif %}
+                  {% if section.presentation != null %}
+RewriteRule ^/pre-{{ event[0] }}-{{ section.id }}.pdf {{ section.presentation }} [R=301,L]
+                  {% endif %}
+              {% endif %}
+       {% endfor %}
+  {% endfor %}
 {% endfor %}

@@ -1,5 +1,6 @@
 # Website settings
 baseurl: "/"
+base_url: "/"
 url: "http://vm.thekkedam.org"
 
 # Internal nav
@@ -105,8 +106,9 @@ highlighter: pygments
 timezone: 'Europe/Berlin'
 
 # Exclude personal
-exclude: 
-  - "skip.html"
+exclude:
+  - _drafts
+  - skip.html
 
 # include
 include:

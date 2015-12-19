@@ -106,7 +106,7 @@ timezone: 'Europe/Berlin'
 
 # Exclude personal
 exclude: 
-  - "_drafts"
+  - "skip.html"
 
 # include
 include:

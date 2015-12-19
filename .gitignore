@@ -22,3 +22,6 @@ Gemfile.lock
 
 # Temp blogger xml files
 blogger
+
+# Drafts
+_drafts

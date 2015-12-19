@@ -1,6 +1,0 @@
-<Directory "human$">
-	AuthType Basic
-	AuthName "Are you Human [ username : human | password : iamhuman ]"
-	AuthUserFile .htpasswd
-	Require valid-user
-</Directory>

@@ -10,7 +10,7 @@ nav:
     projects: "/projects"
     posts: "/writing"
 #   speaking: "/speaking"
-    photos: "/photos"
+#   photos: "/photos"
   writing:
     favorite: "/writing/popular"
     articles: "/writing/articles"
@@ -103,6 +103,16 @@ sass:
   style: :compressed  
 highlighter: pygments
 timezone: 'Europe/Berlin'
+
+# Exclude personal
+#exclude:
+#  - "_personal"
+#  - "_drafts"
+
+# include
+include:
+  - ".htaccess"
+  - ".htpasswd"
 
 # Plugins (GitHub Pages only support a few)
 gems:

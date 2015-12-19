@@ -1,4 +1,4 @@
-<Directory ^human/>
+<Directory "human">
 	AuthType Basic
 	AuthName "Are you Human [ username : human | password : iamhuman ]"
 	AuthUserFile .htpasswd

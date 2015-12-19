@@ -105,9 +105,7 @@ highlighter: pygments
 timezone: 'Europe/Berlin'
 
 # Exclude personal
-exclude:
-  - "_personal"
-  - "_drafts"
+exclude: ["_personal"]
 
 # include
 include:

@@ -113,7 +113,6 @@ exclude:
 # include
 include:
   - ".htaccess"
-  - ".htpasswd"
 
 # Plugins (GitHub Pages only support a few)
 gems:

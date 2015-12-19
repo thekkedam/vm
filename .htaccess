@@ -1,0 +1,9 @@
+---
+---
+
+RewriteEngine On
+RewriteBase /
+
+{% for post in site.categories.post %}
+  RewriteRule ^{{ post.original }} {{ post.permalink }} [R=301,L]
+{% endfor %}

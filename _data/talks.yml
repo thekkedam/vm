@@ -1,6 +1,26 @@
-- Wireless:
-  - 'Performance Measurement of WLAN using open source tools, FossConf (2008) at Madras Institute of Technology, Chennai, India. [<a href="/assets/docs/presentations/Performance-Measurement-of-WLAN_FOSSConF_Vipin_Madhavanunni.pdf">PDF</a>]'
-- Open Source:
-  - 'Network performance Measurement (iperf), WiFi with FOSS Course (2007). [<a href="/assets/docs/presentations/Network_performance_Measurement_IPERF_Vipin_Madhavanunni.pdf">PDF</a>]'
-  - 'Ethereal (Wireshark), WiFi with FOSS Course (2007).  [<a href="/assets/docs/presentations/Ethereal-V-02.11_WIFI_FOSS.pdf">PDF</a>]'
-  - 'Network and open source - An introduction to open source way of network/server implementations, Emerging Tools and Trends in Open Source Computing (2008), Malaviya National Institute of Technology, Jaipur, India. [<a href="/assets/docs/presentations/Network-and-OpenSource_MNIT_Vipin_Madhavanunni.pdf">PDF</a>]'
+Wireless:
+  - title: Performance Measurement of WLAN using open source tools
+    id: performance 
+    conference: FossConf
+    organization: Madras Institute of Technology, Chennai, India
+    year: 2008
+    presentation: /assets/docs/presentations/Performance-Measurement-of-WLAN_FOSSConF_Vipin_Madhavanunni.pdf
+OpenSource:
+  - title: Network performance Measurement (iperf)
+    id: iperf
+    conference: WiFi with FOSS Course
+    organization: AU - KBC Research Centre, Madras Institute of Technology, Chennai, India
+    year: 2007
+    presentation: /assets/docs/presentations/Network_performance_Measurement_IPERF_Vipin_Madhavanunni.pdf
+  - title: Ethereal (Wireshark)
+    id: wireshark
+    conference: WiFi with FOSS Course
+    organization: AU - KBC Research Centre, Madras Institute of Technology, Chennai, India
+    year: 2007
+    presentation: /assets/docs/presentations/Ethereal-V-02.11_WIFI_FOSS.pdf
+  - title: Network and open source - An introduction to open source way of network and servers
+    id: opensource
+    conference: Emerging Tools and Trends in Open Source Computing
+    organization: Malaviya National Institute of Technology, Jaipur, India
+    year: 2008
+    presentation: /assets/docs/presentations/Network-and-OpenSource_MNIT_Vipin_Madhavanunni.pdf

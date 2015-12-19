@@ -1,10 +1,64 @@
-- Conference:
-  - 'M Vipin, S Srikanth. Analysis of open source drivers for ieee 802.11 wlans. In International Conference on Wireless Communication and Sensor Computing, ICWCSC 2010, pages 1–5. IEEE, 2010. [<a href="http://dx.doi.org/10.1109/ICWCSC.2010.5415877">IEEE</a>] [<a href="/assets/docs/publications/Vipin_Analysis_of_open_source_WLAN_driver_Vipin_Madhavanunni.pdf">PDF</a>]'
-  - 'M Vipin, K Sankar, AV Sarad. Building reliable and fault resilient mobile ad hoc networks. In International Conference on Signal Processing, Communications and Networking, ICSCN 2008, pages 264–268. IEEE, 2008. [<a href="http://dx.doi.org/10.1109/ICSCN.2008.4447201">IEEE</a>] [<a href="/assets/docs/publications/Building_Reliable_and_Fault_Resilient_Mobile_Ad-Hoc_Networks_Vipin_Madhavanunni.pdf">PDF</a>] [<a href="/assets/docs/presentations/Building_Reliable_and_Fault_Resilient_Mobile_Ad-Hoc_Vipin_Madhavanunni.pdf">Presentation</a>]'
-  - 'AV Sarad, K Sankar, M Vipin. A time and storage efficient solution to remote fileintegrity check. In Fourth International Conference on Information Assurance and Security, ISIAS 2008, pages 120–125. IEEE, 2008. [<a href="http://dx.doi.org/10.1109/IAS.2008.30">IEEE</a>] [<a href="/assets/docs/publications/A_Time_and_Storage_Efficient_Solution_to_Remote_File_Integrity_Check_Vipin_Madhavanunni.pdf">PDF</a>]'
-  - 'M Vipin, AV Sarad, K Sankar. A multi way tree for token based authentication. In International Conference on Computer Science and Software Engineering, ICCSSE 2008, volume 3, pages 1011–1014. IEEE, 2008. [<a href="http://dx.doi.org/10.1109/CSSE.2008.745">IEEE</a>] [<a href="/assets/docs/publications/A_Multi_Way_Tree_for_Token_Based_Authentication_Vipin_Madhavanunni.pdf">PDF</a>]'
-- Thesis:
-  - 'Analysis of Open Source Drivers for IEEE 802.11 WLANs. Master 2010. [<a href="/assets/docs/thesis/Analysis_of_Open_Source_Drivers_for_IEEE_802.11_WLANs_Vipin_Madhavanunni.pdf">PDF</a>]'
-  - 'Detection and analysis of burst signal from Laser Doppler velocimeter. Bachelor 2003. [<a href="/assets/docs/thesis/Detection_and_Analysis_Of_Burst_Signal_from_Laser_Doppler_Velocimeter_Vipin_Madhavanunni.pdf">PDF</a>]'
-- e-Print:
-  - 'M Vipin and Mohamed Imran KR. Approximate mechanism for measuring stability of internet link in aggregated internet pipe. 2009. [<a href="http://arxiv.org/abs/0907.4881">arxiv.org</a>] [<a href="/assets/docs/publications/Approximate_mechanism_for_measuring_stability_of_Internet_link_Vipin_Madhavanunni.pdf">PDF</a>]'
+Conference:  
+  - title: Analysis of open source drivers for ieee 802.11 wlans
+    id: ieee80211
+    author: M Vipin, S Srikanth 
+    conference: International Conference on Wireless Communication and Sensor Computing
+    organization: ICWCSC, IEEE
+    year: 2010
+    pages: 1–5
+    url: http://dx.doi.org/10.1109/ICWCSC.2010.5415877
+    pdf: /assets/docs/publications/Vipin_Analysis_of_open_source_WLAN_driver_Vipin_Madhavanunni.pdf
+    abstract: 'The purpose of this study is to analyze the open source IEEE 802.11 wireless local area network (WLAN) stack implementation for further enhancement and implementations. We discuss the IEEE 802.11 WLAN implementation in the latest Linux kernel. This includes a functional breakdown of the driver and the overall flow of information via functions. We also survey the specific implementation methods used in the WLAN Linux stack. We compare the legacy driver implementation with the newer Linux kernel implementation. For reference, the Atheros network device driver is taken as an example to discuss the WLAN structure, stack and driver implementation.'
+  - title: Building reliable and fault resilient mobile ad hoc networks 
+    id: abtr
+    author: M Vipin, K Sankar, AV Sarad 
+    conference: International Conference on Signal Processing, Communications and Networking
+    organization: ICSCN, IEEE 
+    year: 2008
+    pages: 264–268
+    url: http://dx.doi.org/10.1109/ICSCN.2008.4447201
+    pdf: /assets/docs/publications/Building_Reliable_and_Fault_Resilient_Mobile_Ad-Hoc_Networks_Vipin_Madhavanunni.pdf
+    presentation: /assets/docs/presentations/Building_Reliable_and_Fault_Resilient_Mobile_Ad-Hoc_Vipin_Madhavanunni.pdf
+    abstract: 'The nodes in a mobile ad hoc network (MANET) have limited processing power, memory and transmission range. The mobile nodes may dynamically enter or leave the ad hoc network. To improve the resilience of the ad-hoc networks to mobility, node and link failure, we propose an algorithm involving binary trees and a special form of cycles in the network graph subject to constraints in topology and use this information to re-route packets from source to destination when interconnecting links or nodes fail.'
+  - title: A time and storage efficient solution to remote fileintegrity check
+    id: rfic
+    author: AV Sarad, K Sankar, M Vipin     
+    conference: Fourth International Conference on Information Assurance and Security
+    organization: ISIAS, IEEE       
+    year: 2008
+    pages: 120–125
+    url: http://dx.doi.org/10.1109/IAS.2008.30
+    pdf: /assets/docs/publications/A_Time_and_Storage_Efficient_Solution_to_Remote_File_Integrity_Check_Vipin_Madhavanunni.pdf
+    abstract: 'Checking the integrity of a file on a remote untrusted or compromised server is to be achieved with minimal computational and storage requirements on part of a healthy verifier. Existing solutions are time and storage intensive. A fast protocol comprising of maximum period linear congruence generators and linear feedback shift registers with compact storage requirements is proposed.'
+  - title: A multi way tree for token based authentication
+    id: tocken
+    author: M Vipin, AV Sarad, K Sankar
+    conference: International Conference on Computer Science and Software Engineering
+    organization: ICCSSE, IEEE
+    year: 2008
+    pages: 1011–1014
+    url: http://dx.doi.org/10.1109/CSSE.2008.745
+    pdf: /assets/docs/publications/A_Multi_Way_Tree_for_Token_Based_Authentication_Vipin_Madhavanunni.pdf
+    abstract: 'Tokens are popular in two factor authentication, where the first authentication credential is a fixed secret key s1 associated with the user and the second authentication credential is a dynamic secret key s2 generated by the token assigned to the user. Popular hardware tokens use a synchronized clock T along with a static secret key encoded into the token to generate a one time secret s2. The contribution of the paper is to eliminate this clock synchronization with the authentication server S and to detect unauthorized login attempts when an intruder is in possession of s1 or s2 but not both, with a high degree of certainty.'
+Thesis:
+  - title: Analysis of Open Source Drivers for IEEE 802.11 WLANs 
+    id: master
+    organization: Anna University 
+    degree: Master
+    year: 2010
+    pdf: /assets/docs/publications/A_Multi_Way_Tree_for_Token_Based_Authentication_Vipin_Madhavanunni.pdf
+  - title: Detection and analysis of burst signal from Laser Doppler velocimeter
+    id: bachelor
+    organization: Bharathidasan University
+    degree: Bachelor
+    year: 2003
+    pdf: /assets/docs/thesis/Detection_and_Analysis_Of_Burst_Signal_from_Laser_Doppler_Velocimeter_Vipin_Madhavanunni.pdf
+e-Print:
+  - title: Approximate mechanism for measuring stability of internet link in aggregated internet pipe
+    id: stability
+    author: M Vipin and Mohamed Imran KR
+    year: 2090
+    url: http://arxiv.org/abs/0907.4881
+    pdf: /assets/docs/publications/Approximate_mechanism_for_measuring_stability_of_Internet_link_Vipin_Madhavanunni.pdf
+    abstract: 'In this article we propose a method for measuring internet connection stability which is fast and has negligible overhead for the process of its complexity. This method finds a relative value for representing the stability of internet connections and can also be extended for aggregated internet connections. The method is documented with help of a real time implementation and results are shared. This proposed measurement scheme uses HTTP GET method for each connections. The normalized responses to identified sites like gateways of ISPs, google.com etc are used for calculating current link stability. The novelty of the approach is that historic values are used to calculate overall link stability. In this discussion, we also document a method to use the calculated values as a dynamic threshold metric. This is used in routing decisions and for load-balancing each of the connections in an aggregated bandwidth pipe. This scheme is a very popular practice in aggregated internet connections.'
+

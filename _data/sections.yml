@@ -22,7 +22,7 @@
 
 - name: Talks
   id: talks
-  layout: talks
+  layout: publications
 
 - name: Skills
   id: skills

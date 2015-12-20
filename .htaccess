@@ -2,7 +2,7 @@
 permalink: .htaccess
 ---
 RewriteEngine On
-RewriteBase /
+#RewriteBase /
 
 {% for event in site.data.publications %}
   {% for section_hash in event %}

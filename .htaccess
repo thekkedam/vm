@@ -1,4 +1,5 @@
 ---
+permalink: .htaccess
 ---
 RewriteEngine On
 RewriteBase /
@@ -32,3 +33,4 @@ RewriteRule ^pre{{ event[0] }}{{ section.id }}.pdf {{ site.url }}{{ section.pres
        {% endfor %}
   {% endfor %}
 {% endfor %}
+

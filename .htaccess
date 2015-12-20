@@ -9,10 +9,10 @@ RewriteBase /
       {% for section in section_hash %}
               {% if section.id != null %}
                   {% if section.pdf != null %}
-RewriteRule ^doc{{ event[0] }}{{ section.id }}.pdf {{ site.url }}{{ section.pdf }} [R=301,L]
+RewriteRule ^doc{{ event[0] }}{{ section.id }}  {{ site.url }}{{ section.pdf }} [R=301,L]
                   {% endif %}
               	  {% if section.presentation != null %}
-RewriteRule ^pre{{ event[0] }}{{ section.id }}.pdf {{ site.url }}{{ section.presentation }} [R=301,L]
+RewriteRule ^pre{{ event[0] }}{{ section.id }}  {{ site.url }}{{ section.presentation }} [R=301,L]
                   {% endif %}
               {% endif %}
        {% endfor %}
@@ -24,10 +24,10 @@ RewriteRule ^pre{{ event[0] }}{{ section.id }}.pdf {{ site.url }}{{ section.pres
       {% for section in section_hash %}
               {% if section.id != null %}
                   {% if section.pdf != null %}
-RewriteRule ^doc{{ event[0] }}{{ section.id }}.pdf {{ site.url }}{{ section.pdf }} [R=301,L]
+RewriteRule ^doc{{ event[0] }}{{ section.id }}  {{ site.url }}{{ section.pdf }} [R=301,L]
                   {% endif %}
                   {% if section.presentation != null %}
-RewriteRule ^pre{{ event[0] }}{{ section.id }}.pdf {{ site.url }}{{ section.presentation }} [R=301,L]
+RewriteRule ^pre{{ event[0] }}{{ section.id }}  {{ site.url }}{{ section.presentation }} [R=301,L]
                   {% endif %}
               {% endif %}
        {% endfor %}

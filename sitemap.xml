@@ -83,12 +83,14 @@
            {% endfor %}
        {% endfor %}
     {% endfor %}
-    <!-- Resume -->
+    <!-- Resume TODO find a way to do this-->
+    <!--
     <url>
         <loc>{{ site.resume_path }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
+    -->
 </urlset>
 

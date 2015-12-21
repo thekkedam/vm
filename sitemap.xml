@@ -1,0 +1,94 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.9">
+    <!-- Posts -->
+    {% for post in site.posts %}
+    <url>
+        <loc>{% include canonical-url.html url=post.url %}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    {% endfor %}
+    <!-- Pages -->
+    {% for page in site.pages %}
+    {% if page.layout != nil and page.layout != 'feed' and page.permalink != '/404.html' %}
+    <url>
+        <loc>{% include canonical-url.html url=page.url %}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    {% endif %}
+    {% endfor %}
+    <!-- Project documents -->
+    {% for project in site.data.projects %}
+    {% if project.doc_url != nil and project.doc_url contains "/assets" first %}
+    <url>
+        <loc>{% include canonical-url.html url=project.doc_url %}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.5</priority>
+    </url>
+    {% endif %}
+    {% endfor %}
+    <!-- Publications -->
+    {% for event in site.data.publications %}
+      {% for section_hash in event %}
+          {% for section in section_hash %}
+              {% if section.id != null %}
+                  {% if section.pdf != null %}
+    	          <url>
+                      <loc>{% include canonical-url.html url=section.pdf %}</loc>
+                      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+                      <changefreq>never</changefreq>
+                      <priority>0.5</priority>
+                  </url>
+                  {% endif %}
+                  {% if section.presentation != null %}
+                  <url>
+                      <loc>{% include canonical-url.html url=section.presentation %}</loc>
+                      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+                      <changefreq>never</changefreq>
+                      <priority>0.5</priority>
+                  </url>
+                  {% endif %}
+              {% endif %}
+           {% endfor %}
+       {% endfor %}
+    {% endfor %}
+    <!-- Talks -->
+    {% for event in site.data.talks %}
+       {% for section_hash in event %}
+          {% for section in section_hash %}
+              {% if section.id != null %}
+                  {% if section.pdf != null %}
+                  <url>
+                      <loc>{% include canonical-url.html url=section.pdf %}</loc>
+                      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+                      <changefreq>never</changefreq>
+                      <priority>0.5</priority>
+                  </url>
+                  {% endif %}
+                  {% if section.presentation != null %}
+                  <url>
+                      <loc>{% include canonical-url.html url=section.presentation %}</loc>
+                      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+                      <changefreq>never</changefreq>
+                      <priority>0.5</priority>
+                  </url>
+                  {% endif %}
+              {% endif %}
+           {% endfor %}
+       {% endfor %}
+    {% endfor %}
+    <!-- Resume -->
+    <url>
+        <loc>{{ site.resume_path }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>
+

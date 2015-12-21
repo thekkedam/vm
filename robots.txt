@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /unknown/
+Disallow: /google97d57224ec2ad433.html

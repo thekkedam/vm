@@ -2,11 +2,17 @@
 
 site_test="-t"
 site_run="-r"
+update="-u"
 
 function rm_site_temp()
 {
     rm -rf _site
     rm -rf .sass-cache
+}
+
+function dep_update()
+{
+    bundle update
 }
 
 function site_build()
@@ -28,8 +34,10 @@ function site_run()
 {
     bundle exec jekyll serve --trace
 }
-
-if [ "$1" == "$site_test" ]
+if [ "$1" == "$update" ]
+then
+    dep_update
+elif [ "$1" == "$site_test" ]
 then
     rm_site_temp
     rm_proff_temp
@@ -42,7 +50,7 @@ then
    site_run
 else
    echo "    Error in usage ..."
-   echo "    ./build.sh < -t | -r > "
+   echo "    ./build.sh < -t | -r | -u> "
    echo "    "
    exit 1
 fi

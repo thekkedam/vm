@@ -6,12 +6,12 @@ url: "http://vm.thekkedam.org"
 # Internal nav
 nav:
   main:
-    home: "/"
     profile: "/profile"
     projects: "/projects"
     posts: "/writing"
 #   speaking: "/speaking"
 #   photos: "/photos"
+    home: "/"
   writing:
     favorite: "/writing/popular"
     articles: "/writing/articles"

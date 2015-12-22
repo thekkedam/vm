@@ -2,7 +2,7 @@
 
 require 'net/http'
 
-BLOGGER_DOMAIN_BASE = "http://brikis98.blogspot"
+BLOGGER_DOMAIN_BASE = "http://vipintm.blogspot"
 
 # From http://dishingtech.blogspot.com/2012/06/list-of-blogger-country-domains-for.html
 DOMAINS = [

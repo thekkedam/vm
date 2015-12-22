@@ -61,6 +61,61 @@ function git_commit()
 	fi		
 }
 
+function git_addf()
+{
+        if [ "$is_git" -eq 1 ]
+        then
+		$temp_file=$1
+                if [ -f $temp_file ]
+                then
+                        echo "Adding $temp_file ..."
+                        run_cmd git add $temp_file
+                        run_cmd git commit $temp_file -m"$COMMIT_MSG"
+                else
+			echo "Unable to find the $temp_file file .."
+		fi
+        else
+                exit 1
+        fi
+}
+
+function add_ingnore()
+{
+	$temp_file=$1
+	echo "Adding $temp_file to ingnore ..."
+	if [ -f $WORKSPACE/.gitignore ]
+	then
+		echo $temp_file >> $WORKSPACE/.gitignore
+	else
+		echo "# Added by script - add other file before this." >> $WORKSPACE/.gitignore
+		echo $temp_file >> $WORKSPACE/.gitignore
+	fi
+}
+
+function add_new()
+{
+        while true; do
+                read -p "Do you wish to add $temp_file to repo?" yn
+                case $yn in
+                        [Yy]* ) git_addf $temp_file; break;;
+                        [Nn]* ) add_ingnore $temp_file; break;;
+                        * ) echo "Please answer yes or no.";;
+                esac
+        done
+}
+
+function check_new()
+{
+	for temp_file in $(git ls-files --others --exclude-standard)
+	do
+		isFile=$(cat $WORKSPACE/.gitignore | grep -v "^ *\(#.*\|\)$" | grep "$temp_file" | wc -l)
+		if [ "$isFile" -eq "0" ]
+		then
+			add_new $temp_file
+		fi
+	done
+}
+
 function git_push()
 {
         if [ "$is_git" -eq 1 ]

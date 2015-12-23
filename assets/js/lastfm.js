@@ -110,7 +110,7 @@ NowPlaying.prototype = {
     
         // Needs replacing with a cross browser jquery plugin
         window.onhashchange = function(event) {
-            username = get_username();
+            username = 'vipintm';
             if (username != np.user) {
                 np.user = username;
                 np.update();

@@ -54,7 +54,7 @@ NowPlaying = function(api, user, interval) {
     this.user = user;
     
     /* AutoUpdate frequency - Last.fm API rate limits at 1/sec */
-    this.interval = interval || 360;
+    this.interval = interval || 60;
 };
 NowPlaying.prototype = {
     

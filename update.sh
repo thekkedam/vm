@@ -65,7 +65,7 @@ function git_addf()
 {
         if [ "$is_git" -eq 1 ]
         then
-		$temp_file="$1"
+		temp_file="$1"
                 if [ -f "$temp_file" ]
                 then
                         echo "Adding $temp_file ..."

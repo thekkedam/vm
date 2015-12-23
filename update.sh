@@ -79,6 +79,19 @@ function git_addf()
         fi
 }
 
+function check_ingnore()
+{
+	temp_file="$1"
+        while true; do
+                read -p "Do you wish to ignore $temp_file permanently?" yn
+                case $yn in
+                        [Yy]* ) add_ingnore "$temp_file"; break;;
+                        [Nn]* ) echo "Skiping $temp_file"; break;;
+                        * ) echo "Please answer yes or no.";;
+                esac
+        done
+}
+
 function add_ingnore()
 {
 	temp_file="$1"
@@ -99,7 +112,7 @@ function add_new()
                 read -p "Do you wish to add $temp_file to repo?" yn
                 case $yn in
                         [Yy]* ) git_addf "$temp_file"; break;;
-                        [Nn]* ) add_ingnore "$temp_file"; break;;
+                        [Nn]* ) check_ingnore "$temp_file"; break;;
                         * ) echo "Please answer yes or no.";;
                 esac
         done

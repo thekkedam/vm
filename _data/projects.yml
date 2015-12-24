@@ -27,6 +27,8 @@
      interconnecting links or nodes fail.
   doc_url: "/assets/docs/publications/Building_Reliable_and_Fault_Resilient_Mobile_Ad-Hoc_Networks_Vipin_Madhavanunni.pdf"
   doc_label: "Publication"
+  src_url: "https://github.com/vipintm/abtr"
+  src_label: "VB6 Visual demo code"
   image: "abtr.png"
 - name: "RFiC"
   name_long: "Tool for Remote File Integrity Check"

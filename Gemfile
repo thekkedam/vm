@@ -12,10 +12,3 @@ gem 'jekyll-gist', versions['jekyll-gist']
 gem 'jekyll-paginate', versions['jekyll-paginate']
 gem 'html-proofer'
 
-#gem 'github-pages'
-#gem 'pygments.rb'
-#gem 'jekyll-mentions'
-#gem 'jekyll-sitemap'
-#gem 'jekyll-gist'
-#gem 'jekyll-paginate'
-#gem 'html-proofer'

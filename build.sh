@@ -17,7 +17,7 @@ function dep_update()
 
 function site_build()
 {
-    bundle exec jekyll build
+    bundle exec jekyll build --verbose --trace
 }
 
 function run_htmlproof()
@@ -32,7 +32,7 @@ function rm_proff_temp()
 
 function site_run()
 {
-    bundle exec jekyll serve --trace
+    bundle exec jekyll serve --verbose --trace
 }
 if [ "$1" == "$update" ]
 then

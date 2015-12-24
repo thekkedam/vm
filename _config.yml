@@ -9,8 +9,8 @@ nav:
     profile: "/profile"
     projects: "/projects"
     posts: "/writing"
-#   speaking: "/speaking"
-#   photos: "/photos"
+    speaking: "/speaking"
+    photos: "/photos"
     home: "/"
   writing:
     favorite: "/writing/popular"
@@ -105,6 +105,14 @@ sass:
 highlighter: pygments
 timezone: 'Europe/Berlin'
 
+# Need to change this
+feed:
+  path: atom.xml
+
+# TO start using
+jekyll-mentions:
+  base_url: https://twitter.com
+
 # Exclude personal
 exclude:
   - _drafts
@@ -118,3 +126,7 @@ include:
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-gist
+  - jekyll-paginate
+  - pygments.rb

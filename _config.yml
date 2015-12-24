@@ -9,7 +9,7 @@ nav:
     profile: "/profile"
     projects: "/projects"
     posts: "/writing"
-    speaking: "/speaking"
+#   speaking: "/speaking"
     photos: "/photos"
     home: "/"
   writing:

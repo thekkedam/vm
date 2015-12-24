@@ -36,7 +36,7 @@ function clean_old_logs()
 function build_check()
 {
 
-	run_cmd bundle exec jekyll build --trace
+	run_cmd bundle exec jekyll build --verbose --trace
 	if [ "$?" -eq "0" ]
 	then
 		echo "Build good ..."

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: poem
 title: The celebration in heaven
 date: '2008-11-17T18:35:00.003+05:30'
 author: Vipin Madhavanunni

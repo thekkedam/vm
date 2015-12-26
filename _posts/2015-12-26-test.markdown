@@ -1,7 +1,0 @@
----
-layout: post 
-title:  "Test" 
-date:   2015-12-26T12:19:55.281Z 
----
-
-Test again

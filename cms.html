@@ -151,7 +151,7 @@ permalink: cms.html
 	    	},
 	        success: function(data) {
 	        	posted_ok = true ;
-	        	$('#container1').html('<h2>Successfully posted to {{ site.title }}</h2') ;
+	        	$('#container1').html('<h2>Successfully posted to {{ site.description }}</h2') ;
 	        },
 	        error: function(request, status, error) {
 	        	responseText = jQuery.parseJSON( request.responseText );
@@ -175,8 +175,8 @@ permalink: cms.html
 			src_title = query_params['title'] ;
 			$('#p_title').val(src_title) ;
 		}
-		if (query_params['selection']) {
-			src_body = '> ' + query_params['selection'] ;
+		if (query_params['tags']) {
+			src_body = '> ' + query_params['tags'] ;
 		}
 		if (query_params['body']) {
 			src_body = query_params['body'] ;

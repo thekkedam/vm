@@ -42,6 +42,11 @@ aukbc_url: "http://www.au-kbc.org/comm/"
 resume_path: "https://www.sharelatex.com/github/repos/vipintm/cv/builds/latest/output.pdf"
 resume_src: "https://github.com/vipintm/cv"
 
+# CDN
+cdn: "enable"
+cdn_url: "https://cdn.rawgit.com"
+image_cdn: "thekkedam/vm/gh-pages/assets/img"
+
 # URLs
 contact_urls:  
   twitter: 

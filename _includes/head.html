@@ -11,3 +11,10 @@
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/{{ site.feed }}">
 {% include favicon.html %}
 {% include styles.html %}
+<!-- Hack to load some script in start of file -->
+{% if page.init_scripts %}
+  {% for script in page.init_scripts %}
+    <script type="text/javascript" src="{{ script }}"></script>
+  {% endfor %}
+{% endif %}
+

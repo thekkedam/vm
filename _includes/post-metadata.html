@@ -41,9 +41,15 @@
         {% assign minutes = 1 %}
       {% endif %}
     {% endif %}
-    <span class="nowrap">
+    <span class="mr1 nowrap">
       <i class="fa fa-clock-o"></i>
       <span>{{ minutes }} min read</span>
+    </span>
+  {% endif %} 
+  {% if site.github.repo != none and site.github.branch != none %}
+    <span class="nowrap">
+      <i class="fa fa-pencil-square"></i>
+      <a href="https://github.com/{{ site.github.repo }}/blob/{{ site.github.branch }}/{{ page.path }}" target="_blank">Edit this post</a>
     </span>
   {% endif %}
 </div>

@@ -1,23 +1,20 @@
 ---
-permalink: cms.html
+layout: default
+title: "Vipin Madhavanunni: Create new post"
+header_title: New post
+include_header: cms_header.html
+nav_item: cms
+permalink: /cms.html
+init_scripts:
+  - '/assets/js/bootstrap.min.js'
+  - '/assets/js/jquery-2.1.4.min.js'
+extra_styles:
+  - 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'
+  - 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css'
 ---
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
-	<title>Vipin Madhavanunni: Post from Web</title>
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
-</head>
-
-<body>
+  <div class="mxn2 clearfix mb2 border-bottom border-light-gray circle-line py3">
 	<div class="container" id="container1" >
-	<h5>Create new post at {{ site.description }}</h5>
+        <br>
 	{% if site.github.repo == none %}
 		<div class="alert alert-danger" role="alert"><code>github.repo</code> is not set.</div>
 	{% endif %}
@@ -45,37 +42,16 @@ permalink: cms.html
 				<input type="password" class="form-control" id="password" placeholder="GitHub password">
 			</div>
 			<input type="button" class="btn btn-default" id="go" value="Post" /> 
-			<a class="btn btn-link" data-toggle="collapse" href="#submitform" aria-expanded="false" aria-controls="submitform">Remember username/password</a>
 		</div>
 		<div class="collapse" id="submitform">
 		<br>
-	  	<div class="well">
-	    	<p>Because of the way this form works (the form data is not sumbitted, as forms usually do), your browser may not ask you to remember the username/password. 
-	    	<br>If you'd like to save them to your password manager, fill them in and click this button.
-	    	<br>This will not create a new post!</p>
-	    	<input type="submit" class="btn btn-default" value="Trick browser to save username/password">
-	  	</div>
 		</div>
 	</form>
-
-	<p>Drag this link to your bookmarks, to post from any webpage: <a href="javascript:(function(){
-	var title = document.getElementsByTagName('title')[0].innerHTML;
-	title = encodeURIComponent(title) ;
-	var selection = '';
-	if (window.getSelection) {
-	    selection = window.getSelection().toString();
-	} else if (document.selection &amp;&amp; document.selection.type != 'Control') {
-	    selection = document.selection.createRange().text;
-	}
-	selection = encodeURIComponent(selection);
-	new_window=window.open('{{ "/cms.html" | prepend: site.baseurl | prepend: site.url }}?title='+title+'&amp;selection='+selection+'&amp;url='+encodeURIComponent(document.location.href),'JekyllPopup','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0');
-	})();"
-	>post to GitHub</a></p>
 	</div>
 
 	<script>
 	function get_query(){
-		// Source: http://fellowtuts.com/jquery/getting-query-string-values-in-javascript/
+            // Source: http://fellowtuts.com/jquery/getting-query-string-values-in-javascript/
 	    var url = document.location.href;
 	    if (url.indexOf('?') == -1) return false ;
 	    var qs = url.substring(url.indexOf('?') + 1).split('&');
@@ -151,15 +127,13 @@ permalink: cms.html
 	    	},
 	        success: function(data) {
 	        	posted_ok = true ;
-	        	$('#container1').html('<h2>Successfully posted to {{ site.description }}</h2') ;
+	        	$('#container1').html('<h3>Successfully posted ...</h3><br>See the <a href="/writing">posts</a> ') ;
 	        },
 	        error: function(request, status, error) {
 	        	responseText = jQuery.parseJSON( request.responseText );
         		$('#messages').append($('<div class="alert alert-danger alert-dismissible" role="alert">')
-        		.append('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>')
-        		.append('<strong>' + request.status + '</strong>: ' + responseText.message )
-        		.append('<br>If you are using two-factor-auth, you will ahve to create ')
-        		.append('<a href="https://github.com/settings/tokens">a personal access token</a> with "repo" permissions and use this instead of your password.')
+                        .append('<strong>' + request.status + '</strong>: ' + responseText.message )
+        		.append('<br>Failed auth, wrong personal access tokens. ')
         		.append('</div>'));
 	        	
 	        },
@@ -188,4 +162,8 @@ permalink: cms.html
 	}
 
 	</script>
-</body>
+  </div>
+  <p>
+        <i class="fa fa-fw fa-lg fa-info-circle"></i>
+        This is a simple way to post with limited capabilities.
+  </p>

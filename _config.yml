@@ -25,7 +25,7 @@ nav:
 
 # direct links 
 about: "/about"
-cms: "/cms.html"
+cms: "https://vm.thekkedam.org/cms.html"
 
 # Bio settings
 name: "Vipin Madhavanunni"

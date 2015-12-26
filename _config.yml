@@ -26,6 +26,7 @@ nav:
 # direct links 
 about: "/about"
 cms: "https://vm.thekkedam.org/cms.html"
+feed: "feed.xml"
 
 # Bio settings
 name: "Vipin Madhavanunni"
@@ -50,8 +51,8 @@ cdn:
   image: "thekkedam/vm/gh-pages/assets/img"
 
 github:
-  repo: thekkedam/vm
-  branch: gh-pages
+  repo: "thekkedam/vm"
+  branch: "gh-pages"
 
 # URLs
 contact_urls:  
@@ -117,8 +118,8 @@ highlighter: pygments
 timezone: 'Europe/Berlin'
 
 # Need to change this
-feed:
-  path: atom.xml
+#feed:
+#  path: atom.xml
 
 # TO start using
 jekyll-mentions:

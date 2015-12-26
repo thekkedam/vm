@@ -23,8 +23,9 @@ nav:
     tags: "/writing/tags"
     all: "/writing"
 
-# About
+# direct links 
 about: "/about"
+cms: "/cms.html"
 
 # Bio settings
 name: "Vipin Madhavanunni"
@@ -43,9 +44,14 @@ resume_path: "https://www.sharelatex.com/github/repos/vipintm/cv/builds/latest/o
 resume_src: "https://github.com/vipintm/cv"
 
 # CDN
-cdn: "enable"
-cdn_url: "https://cdn.rawgit.com"
-image_cdn: "thekkedam/vm/gh-pages/assets/img"
+cdn: 
+  state: "enable"
+  url: "https://cdn.rawgit.com"
+  image: "thekkedam/vm/gh-pages/assets/img"
+
+github:
+  repo: thekkedam/vm
+  branch: gh-pages
 
 # URLs
 contact_urls:  

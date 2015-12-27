@@ -45,17 +45,21 @@ function copy_file()
 function make_diploy()
 {
         echo "Make docker deply files ..."
-	copy_file versions.json deploy/
 	copy_file Gemfile deploy/
 	copy_file Gemfile.lock deploy/
 }
 
 function clean_old_logs()
 {
+	echo "Clearing old files ..."
 	if [ -d $WORKSPACE/_site ]; then
-		echo "Clearing old files ..."
+		echo "_site ..."
     		run_cmd rm -rf $WORKSPACE/_site
 	fi
+        if [ -d $WORKSPACE/.sass-cache ]; then
+                echo ".sass-cache ..."
+                run_cmd rm -rf $WORKSPACE/.sass-cache
+        fi	
 }
 
 function build_update()
@@ -187,5 +191,35 @@ function git_push()
         else
                 exit 1
         fi
+}
+
+function dep_update()
+{
+	echo "Update gems ..."
+	run_cmd bundle update
+}
+
+function site_build()
+{
+	echo "Build jekyll site ..."
+	run_cmd bundle exec jekyll build --verbose --trace
+}
+
+function run_htmlproof()
+{
+	echo "Run html proof ..."
+	run_cmd bundle exec htmlproof ./_site --disable-external
+}
+
+function rm_proff_temp()
+{
+	echo "Remove htmlproof temp files ..."
+	run_cmd rm -rf tmp
+}
+
+function site_run()
+{
+	echo "Run jekyll server ...."
+	bundle exec jekyll serve --verbose --trace
 }
 

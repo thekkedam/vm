@@ -8,6 +8,16 @@ function check_git()
 	fi
 }
 
+function set_default()
+{
+        if [ -z $run_cmd_debug ]; then
+                run_cmd_debug=0
+        fi
+	if [ -z $EXITONERROR ]; then
+		EXITONERROR="yes"
+	fi
+}
+
 function run_cmd()
 {
 	$@ > $WORKSPACE/run-update.log 2>&1
@@ -15,37 +25,49 @@ function run_cmd()
 	if [ "$ret" -eq "0" ]
 	then
 		echo "Excuted $@ ..."
+		if [ "$run_cmd_debug" -eq "1" ]; then
+			cat $WORKSPACE/run-update.log
+		fi
 	else
 		echo "Error in excuting $@ ..."
 		cat $WORKSPACE/run-update.log
-		exit $ret
+		if [ "$EXITONERROR" -eq "no" ]; then
+			echo "Not exiting as EXITONERROR is set to $EXITONERROR .."
+		else
+			exit $ret
+		fi
 	fi
+}
+
+function copy_file()    
+{               
+        echo "Copy file $1 to $2 ..."
+        run_cmd cp $1 $2
 }
 
 function get_version()
 {
 	echo "Get latest github support ..."
 	if [ -f versions.json ]; then
-		run_cmd mv versions.json versions.json.back
+		run_cmd rm -f versions.json 
 	fi
+	EXITONERROR="no"
 	run_cmd wget https://pages.github.com/versions.json
-}
-
-function copy_file()
-{
-	echo "Copy file $1 to $2 ..."
-	if [ -f $1 ]; then
-		run_cmd cp $1 $2
-	else
-		echo "Unable to find $1 .."
-		exit 1
+	if [ "$ret" -ne "0" ]; then
+		echo "Error on retriving versions.json ..."
+		if [ -f deploy/versions.json ]; then
+			echo "Using last deploy files ..."
+			copy_file deploy/versions.json versions.json
+		fi
 	fi
+	EXITONERROR="yes"
 }
 
 function make_diploy()
 {
         echo "Make docker deply files ..."
 	copy_file Gemfile deploy/
+	copy_file versions.json deploy/
 	copy_file Gemfile.lock deploy/
 }
 
@@ -223,3 +245,4 @@ function site_run()
 	bundle exec jekyll serve --verbose --trace
 }
 
+set_default

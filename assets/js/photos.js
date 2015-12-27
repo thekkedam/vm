@@ -29,13 +29,23 @@
     }
   };
 
+  var getAlbumUrl = function(album, title) {
+    var links = album.link;
+    var htmlLink = _.find(links, function(link) { return link.type === "text/html"; });
+    if (htmlLink) {
+      return htmlLink.href;
+    } else {
+      log("Unable to get URL for album with title " + title);
+    }
+  };
+
   var titlesOfAlbumsToSkip = ["Profile Photos", "Photos from posts", "Scrapbook Photos"];
 
   var showAlbums = function(albums) {
     var albumData = _.map(albums.feed.entry, function(album) {
       var title = truncate(album.title.$t, 32);
       var thumbnail = album.media$group.media$thumbnail[0].url;
-      var url = convertPicassaToGooglePlusUrl(album, title);
+      var url = getAlbumUrl(album, title);
 
       return {title: title, thumbnail: thumbnail, url: url};
     });

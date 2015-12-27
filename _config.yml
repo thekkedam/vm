@@ -129,6 +129,7 @@ jekyll-mentions:
 exclude:
   - _drafts
   - skip.html
+  - deploy
 
 # include
 include:

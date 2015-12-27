@@ -88,31 +88,6 @@ function clean_old_logs()
 	clean_file Gemfile.lock 
 }
 
-function build_update()
-{
-        run_cmd bundle update
-        if [ "$?" -eq "0" ]
-        then
-                echo "Update good ..."
-        else
-                echo "Error in Updating ..."
-                exit 1
-        fi
-}
-
-function build_check()
-{
-
-	run_cmd bundle exec jekyll build --verbose --trace
-	if [ "$?" -eq "0" ]
-	then
-		echo "Build good ..."
-	else
-		echo "Error in build ..."
-		exit 1
-	fi
-}
-
 function git_commit()
 {
 	if [ "$is_git" -eq 1 ]
@@ -219,7 +194,7 @@ function git_push()
         fi
 }
 
-function dep_update()
+function gem_update()
 {
 	echo "Update gems ..."
 	run_cmd bundle update

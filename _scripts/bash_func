@@ -11,7 +11,7 @@ function check_git()
 function set_default()
 {
         if [ -z $run_cmd_debug ]; then
-                run_cmd_debug=0
+                run_cmd_debug=1
         fi
 	if [ -z $EXITONERROR ]; then
 		EXITONERROR="yes"
@@ -45,6 +45,14 @@ function copy_file()
         run_cmd cp $1 $2
 }
 
+function clean_file()
+{
+	echo "Clean file $1 ..."
+	EXITONERROR="no"
+	run_cmd rm -rf $1
+	EXITONERROR="yes"
+}
+
 function get_version()
 {
 	echo "Get latest github support ..."
@@ -74,14 +82,10 @@ function make_diploy()
 function clean_old_logs()
 {
 	echo "Clearing old files ..."
-	if [ -d $WORKSPACE/_site ]; then
-		echo "_site ..."
-    		run_cmd rm -rf $WORKSPACE/_site
-	fi
-        if [ -d $WORKSPACE/.sass-cache ]; then
-                echo ".sass-cache ..."
-                run_cmd rm -rf $WORKSPACE/.sass-cache
-        fi	
+	clean_file _site
+        clean_file .sass-cache
+	clean_file versions.json
+	clean_file Gemfile.lock 
 }
 
 function build_update()

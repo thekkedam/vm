@@ -98,8 +98,8 @@ function make_diploy()
 {
         echo "Make docker deply files ..."
 	#copy_file Gemfile deploy/
-	copy_file versions.json deploy/
-	copy_file Gemfile.lock deploy/
+	#copy_file versions.json deploy/
+	#copy_file Gemfile.lock deploy/
 }
 
 function clean_old_logs()

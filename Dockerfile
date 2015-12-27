@@ -15,7 +15,7 @@ RUN gem install nokogiri -- --use-system-libraries
 WORKDIR /tmp 
 ADD Gemfile Gemfile
 #ADD Gemfile.lock Gemfile.lock
-RUN sudo bundle install 
+RUN bundle install 
 
 # Copy source
 RUN mkdir -p /src

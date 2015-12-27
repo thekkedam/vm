@@ -5,10 +5,7 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 RUN apk-install bash build-base libffi-dev zlib-dev libxml2-dev libxslt-dev ruby ruby-dev nodejs
 
 # Install Jekyll
-RUN gem install bundler jekyll --no-ri --no-rdoc
-
-# Install nokogiri separately because it's special
-RUN gem install nokogiri -- --use-system-libraries
+RUN gem install bundler jekyll 
 
 # Copy the Gemfile and Gemfile.lock into the image and run bundle install in a
 # way that will be cached

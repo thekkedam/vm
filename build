@@ -1,0 +1,37 @@
+#!/bin/bash
+
+site_test="-t"
+site_run="-r"
+update="-u"
+WORKSPACE=$(pwd)
+
+if [ -f _scripts/bash_func ]; then
+        . _scripts/bash_func
+else
+        echo "Error on _scripts/bash_func ..."
+fi
+
+
+### MAIN ###
+if [ "$1" == "$update" ]
+then
+    build_update
+    dep_update
+elif [ "$1" == "$site_test" ]
+then
+    clean_old_logs
+    rm_proff_temp
+    site_build
+    run_htmlproof
+elif [ "$1" == "$site_run" ]
+then
+   clean_old_logs
+   rm_proff_temp
+   site_run
+else
+   echo "    Error in usage ..."
+   echo "    ./build < -t | -r | -u> "
+   echo "    "
+   exit 1
+fi
+      

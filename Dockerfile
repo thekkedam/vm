@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.2
+FROM gliderlabs/alpine:3.3
 MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 
 # Install all the dependencies for Jekyll

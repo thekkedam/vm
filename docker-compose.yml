@@ -1,5 +1,5 @@
 web:  
-  image: vipintm/vm.thekkedam.org
+  image: thekkedam/vm
   volumes:
     - .:/src
   ports:

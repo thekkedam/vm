@@ -16,6 +16,7 @@ WORKDIR /tmp
 COPY deploy/Gemfile Gemfile
 COPY deploy/Gemfile.lock Gemfile.lock
 COPY deploy/jekyll-serve jekyll-serve
+COPY deploy/versions.json versions.json
 RUN bundle install --deployment
 
 # Copy source

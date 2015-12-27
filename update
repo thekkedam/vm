@@ -1,0 +1,29 @@
+#!/bin/bash
+
+WORKSPACE=$(pwd)
+COMMIT_TIME=$(date +"%m-%d-%Y-%H:%M")
+COMMIT_MSG="Updated-$COMMIT_TIME"
+
+is_git=0
+
+if [ -f _scripts/bash_func ]; then
+	. _scripts/bash_func
+else
+	echo "Error on _scripts/bash_func ..."
+fi
+
+
+### MAIN ###
+check_git
+
+clean_old_logs
+get_version
+
+build_update
+build_check
+make_diploy
+
+check_new
+git_commit
+git_push
+

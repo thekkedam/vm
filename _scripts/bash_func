@@ -109,7 +109,7 @@ function clean_old_logs()
         clean_file .sass-cache
 	clean_file versions.json
 	clean_file Gemfile.lock 
-	clean_file run-cmd.log
+	clean_file $run_cmd_log_file
 }
 
 function git_commit()

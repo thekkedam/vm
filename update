@@ -27,4 +27,4 @@ clean_old_logs
 check_new
 git_commit
 git_push
-
+clean_old_logs

@@ -4,8 +4,10 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 # Install all the dependencies for Jekyll
 RUN apk-install bash build-base libffi-dev zlib-dev libxml2-dev libxslt-dev ruby ruby-dev nodejs
 
+RUN gem rdoc --all --overwrite
+
 # Install Jekyll
-RUN gem install bundler jekyll --no-ri --rdoc
+RUN gem install bundler jekyll --no-ri
 
 # Install nokogiri separately because it's special
 RUN gem install nokogiri -- --use-system-libraries	

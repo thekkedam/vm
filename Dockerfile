@@ -15,7 +15,7 @@ RUN gem install nokogiri -- --use-system-libraries
 WORKDIR /tmp 
 ADD Gemfile Gemfile
 #ADD Gemfile.lock Gemfile.lock
-RUN bundle install 
+RUN bundle install --deployment --gemfile=deploy/Gemfile 
 
 # Copy source
 RUN mkdir -p /src
@@ -27,4 +27,4 @@ ADD . /src
 EXPOSE 4000
 
 # Run jekyll serve
-CMD ["./jekyll-serve.sh"]
+CMD ["./deploy/jekyll-serve"]

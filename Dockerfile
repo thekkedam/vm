@@ -4,6 +4,8 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 # Install all the dependencies for Jekyll
 RUN apk-install bash build-base libffi-dev zlib-dev libxml2-dev libxslt-dev ruby ruby-dev nodejs
 
+RUN gem install rails --rdoc
+
 RUN gem rdoc --all --overwrite
 
 # Install Jekyll

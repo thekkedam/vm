@@ -1,3 +1,9 @@
+function print_sep()
+{
+	echo ""
+        echo "---------------------------------------------------"
+	echo ""
+}
 function check_git()
 {
 	if type "git" > /dev/null 2>&1 ; then
@@ -16,21 +22,28 @@ function set_default()
 	if [ -z $EXITONERROR ]; then
 		EXITONERROR="yes"
 	fi
+	if [ -z $run_cmd_log_file ]; then
+		run_cmd_log_file="run-cmd.log"
+	fi
 }
 
 function run_cmd()
 {
-	$@ > $WORKSPACE/run-update.log 2>&1
+	$@ > $run_cmd_log_file 2>&1
 	ret=$?
 	if [ "$ret" -eq "0" ]
 	then
 		echo "Excuted $@ ..."
-		if [ "$run_cmd_debug" -eq "1" ]; then
-			cat $WORKSPACE/run-update.log
+		if [ "$run_cmd_debug" -eq "1" ] && [ -s $run_cmd_log_file ]; then
+			print_sep
+			cat $run_cmd_log_file
+			print_sep
 		fi
 	else
 		echo "Error in excuting $@ ..."
-		cat $WORKSPACE/run-update.log
+		print_sep
+		cat $run_cmd_log_file
+		print_sep
 		if [ "$EXITONERROR" -eq "no" ]; then
 			echo "Not exiting as EXITONERROR is set to $EXITONERROR .."
 		else
@@ -53,28 +66,38 @@ function clean_file()
 	EXITONERROR="yes"
 }
 
+# get_file <file name> <file url> <back up file>
+function get_file()
+{
+	if [ -z $3 ]; then
+		$3 = "0"
+	fi
+        echo "Get $1 from $2 ..."
+        if [ -f $1 ]; then
+                run_cmd rm -f $1
+        fi
+        EXITONERROR="no"
+        run_cmd wget $2 -O $1
+        if [ "$ret" -ne "0" ]; then
+                echo "Error on retriving $1 ..."
+                if [ -f $3 ]; then
+                        echo "Using $3 files ..."
+                        copy_file $3 $1
+                fi
+        fi
+        EXITONERROR="yes"
+}
+
 function get_version()
 {
 	echo "Get latest github support ..."
-	if [ -f versions.json ]; then
-		run_cmd rm -f versions.json 
-	fi
-	EXITONERROR="no"
-	run_cmd wget https://pages.github.com/versions.json
-	if [ "$ret" -ne "0" ]; then
-		echo "Error on retriving versions.json ..."
-		if [ -f deploy/versions.json ]; then
-			echo "Using last deploy files ..."
-			copy_file deploy/versions.json versions.json
-		fi
-	fi
-	EXITONERROR="yes"
+	get_file versions.json https://pages.github.com/versions.json deploy/versions.json
 }
 
 function make_diploy()
 {
         echo "Make docker deply files ..."
-	copy_file Gemfile deploy/
+	#copy_file Gemfile deploy/
 	copy_file versions.json deploy/
 	copy_file Gemfile.lock deploy/
 }
@@ -86,6 +109,7 @@ function clean_old_logs()
         clean_file .sass-cache
 	clean_file versions.json
 	clean_file Gemfile.lock 
+	clean_file run-cmd.log
 }
 
 function git_commit()

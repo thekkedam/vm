@@ -19,8 +19,8 @@ check_git
 clean_old_logs
 get_version
 
-build_update
-build_check
+gem_update
+site_build
 make_diploy
 
 clean_old_logs

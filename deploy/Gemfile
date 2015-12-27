@@ -10,5 +10,5 @@ gem 'jekyll-mentions', versions['jekyll-mentions']
 gem 'jekyll-sitemap', versions['jekyll-sitemap']
 gem 'jekyll-gist', versions['jekyll-gist']
 gem 'jekyll-paginate', versions['jekyll-paginate']
-gem 'html-proofer'
+#gem 'html-proofer'
 

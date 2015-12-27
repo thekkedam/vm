@@ -14,7 +14,7 @@ RUN gem install nokogiri -- --use-system-libraries
 # way that will be cached
 WORKDIR /tmp 
 ADD Gemfile Gemfile
-ADD Gemfile.lock Gemfile.lock
+#ADD Gemfile.lock Gemfile.lock
 RUN bundle install 
 
 # Copy source

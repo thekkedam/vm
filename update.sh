@@ -33,6 +33,18 @@ function clean_old_logs()
 	fi
 }
 
+function build_update()
+{
+        run_cmd bundle update
+        if [ "$?" -eq "0" ]
+        then
+                echo "Update good ..."
+        else
+                echo "Error in Updating ..."
+                exit 1
+        fi
+}
+
 function build_check()
 {
 
@@ -156,6 +168,7 @@ function git_push()
 
 clean_old_logs
 
+build_update
 build_check
 
 check_new

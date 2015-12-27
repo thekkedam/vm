@@ -23,6 +23,7 @@ build_update
 build_check
 make_diploy
 
+clean_old_logs
 check_new
 git_commit
 git_push

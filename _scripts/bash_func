@@ -212,7 +212,7 @@ function git_push()
         if [ "$is_git" -eq 1 ]
         then
 		echo "Pusing chnages to git ..."
-                run_cmd git push
+                run_cmd git push --all
         else
                 exit 1
         fi

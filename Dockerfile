@@ -19,6 +19,7 @@ COPY deploy/jekyll-serve jekyll-serve
 COPY deploy/versions.json versions.json
 
 # lets install all required gems
+RUN bundle config build.nokogiri --use-system-libraries 
 RUN bundle install 
 
 # Copy source

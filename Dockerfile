@@ -4,7 +4,8 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 # Install all the dependencies for Jekyll
 RUN apk add --update bash build-base libffi-dev zlib-dev libxml2-dev \
 			libxslt-dev ruby ruby-dev ruby-rdoc ruby-irb \
-			ruby-nokogiri ruby-json ruby-libs nodejs
+			ruby-nokogiri ruby-json ruby-libs ruby-io-console \
+			nodejs
 
 # Install bundler
 RUN gem install bundler 

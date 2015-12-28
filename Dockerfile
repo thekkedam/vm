@@ -4,7 +4,7 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 RUN apt-get update
 RUN apt-get -y upgrade
 
-RUN apt-get -y install ruby ruby-dev make gcc nodejs
+RUN apt-get -y install ruby2.1 ruby2.1-dev make gcc nodejs
 
 RUN gem install jekyll --no-rdoc --no-ri
 

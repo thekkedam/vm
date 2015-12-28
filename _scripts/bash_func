@@ -250,7 +250,7 @@ function site_run()
 
 function link_draft()
 {
-	if [ -f _drfat ] && [ -L _draft ]; then
+	if [ -L _drafts ]; then
 		echo "The link present ..."
 	else
 		echo "Creting _draft link ..."

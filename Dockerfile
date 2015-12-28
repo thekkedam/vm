@@ -6,11 +6,9 @@ RUN apt-get -y upgrade
 
 RUN apt-get -y install ruby2.0 ruby2.0-dev make gcc nodejs
 
-RUN gem install jekyll --no-rdoc --no-ri
+RUN gem install jekyll 
 
 RUN gem install bundler
-
-RUN gem install github-pages --no-rdoc --no-ri
 
 WORKDIR /tmp 
 COPY deploy/Gemfile Gemfile

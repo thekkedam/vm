@@ -15,6 +15,7 @@ fi
 
 ### MAIN ###
 check_git
+link_draft
 
 clean_old_logs
 get_version

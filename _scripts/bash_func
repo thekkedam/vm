@@ -248,4 +248,14 @@ function site_run()
 	bundle exec jekyll serve --verbose --trace
 }
 
+function link_draft()
+{
+	if [ -f _drfat ] && [ -L _draft ]; then
+		echo "The link present ..."
+	else
+		echo "Creting _draft link ..."
+		ln -s ../../../work-personal/_drafts .
+	fi 
+}
+
 set_default

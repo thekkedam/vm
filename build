@@ -13,6 +13,7 @@ fi
 
 
 ### MAIN ###
+link_draft
 if [ "$1" == "$update" ]
 then
     build_update

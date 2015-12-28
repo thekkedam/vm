@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 
 # Install all the dependencies for Jekyll
-RUN apk add --update bash build-base libffi-dev zlib-dev libxml2-dev libxslt-dev ruby ruby-dev nodejs
+RUN apk add --update bash build-base libffi-dev zlib-dev libxml2-dev libxslt-dev ruby ruby-dev ruby-doc nodejs
 
 # Install Jekyll
 RUN gem install bundler jekyll --no-ri --no-rdoc

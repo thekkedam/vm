@@ -5,6 +5,13 @@ site_run="-r"
 update="-u"
 WORKSPACE=$(pwd)
 
+function exit_process()
+{
+    echo "Exiting ..."
+    clean_old_logs
+    rm_proff_temp
+}
+
 if [ -f _scripts/bash_func ]; then
         . _scripts/bash_func
 else

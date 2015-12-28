@@ -1,45 +1,31 @@
-FROM ubuntu:trusty
+FROM alpine:latest
 MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 
-ENV RUBY_VERSION 2.1
+# Install all the dependencies for Jekyll
+RUN apk-install bash build-base libffi-dev zlib-dev libxml2-dev libxslt-dev ruby ruby-dev nodejs
 
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C3173AA6 && \
-    echo deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu trusty main > /etc/apt/sources.list.d/brightbox-ruby-ng-trusty.list
+# Install Jekyll
+RUN gem install bundler jekyll --no-ri --no-rdoc
 
-RUN apt-get update
-RUN apt-get -y upgrade
+# Install nokogiri separately because it's special
+RUN gem install nokogiri -- --use-system-libraries
 
-RUN apt-get -y install \
-        ca-certificates \
-        openssl \
-        libssl-dev \
-        g++ \
-        gcc \
-        libc6-dev \
-        make \
-        patch \
-        ruby$RUBY_VERSION \
-        ruby$RUBY_VERSION-dev \
-	build-essential \
-	nodejs 
-
-RUN rm -rf /var/lib/apt/lists/* && \
-    truncate -s 0 /var/log/*log
-
-RUN gem install bundler
-
+# Copy the Gemfile and Gemfile.lock into the image and run bundle install in a
+# way that will be cached
 WORKDIR /tmp 
 COPY deploy/Gemfile Gemfile
 COPY deploy/Gemfile.lock Gemfile.lock
 COPY deploy/jekyll-serve jekyll-serve
 COPY deploy/versions.json versions.json
-RUN bundle install 
 
+# Copy source
 RUN mkdir -p /src
 VOLUME ["/src"]
 WORKDIR /src
 ADD . /src
 
+# Jekyll runs on port 4000 by default
 EXPOSE 4000
 
+# Run jekyll serve
 CMD ["./jekyll-serve"]

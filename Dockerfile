@@ -4,7 +4,9 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 RUN apt-get update
 RUN apt-get -y upgrade
 
-RUN apt-get -y install ruby2.0 ruby2.0-dev rubygems make gcc nodejs
+RUN apt-get -y install ruby2.0 ruby2.0-dev make gcc build-essential nodejs zlibc zlib1g zlib1g-dev
+
+RUN gem install nokogiri
 
 RUN gem install jekyll 
 

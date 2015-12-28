@@ -5,6 +5,11 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 RUN apk add --update bash build-base libffi-dev zlib-dev libxml2-dev \
 			libxslt-dev ruby ruby-dev nodejs
 
+# let avoide rdoc
+RUN echo 'gem: --no-document' >> ~/.gemrc && \
+  cp ~/.gemrc /etc/gemrc && \
+  chmod uog+r /etc/gemrc
+
 # Install bundler
 RUN gem install bundler 
 
@@ -19,7 +24,13 @@ COPY deploy/versions.json versions.json
 # lets install all required gems
 RUN bundle config build.nokogiri --use-system-libraries 
 RUN bundle config build.jekyll --no-rdoc
-RUN bundle install 
+RUN bundle install
+
+# lets clean
+RUN find / -type f -iname \*.apk-new -delete && \
+  rm -rf /var/cache/apk/* && \
+  rm -rf /usr/lib/lib/ruby/gems/*/cache/* && \
+  rm -rf ~/.gem 
 
 # Copy source
 RUN mkdir -p /src

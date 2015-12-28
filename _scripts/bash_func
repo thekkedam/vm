@@ -48,7 +48,7 @@ function run_cmd()
 		print_sep
 		cat $run_cmd_log_file
 		print_sep
-		if [ "$EXITONERROR" -eq "no" ]; then
+		if [ "$EXITONERROR" == "no" ]; then
 			echo "Not exiting as EXITONERROR is set to $EXITONERROR .."
 		else
 			exit $ret
@@ -64,7 +64,7 @@ function copy_file()
 
 function clean_file()
 {
-	echo "Clean file $1 ..."
+	#echo "Clean file $1 ..."
 	EXITONERROR="no"
 	run_cmd rm -rf $1
 	EXITONERROR="yes"
@@ -76,7 +76,7 @@ function get_file()
 	if [ -z $3 ]; then
 		$3 = "0"
 	fi
-        echo "Get $1 from $2 ..."
+        #echo "Get $1 from $2 ..."
         if [ -f $1 ]; then
                 run_cmd rm -f $1
         fi
@@ -249,7 +249,13 @@ function rm_proff_temp()
 function site_run()
 {
 	echo "Run jekyll server ...."
-	run_cmd bundle exec jekyll serve --verbose --trace
+        if [ "$run_cmd_debug" -eq "1" ]; then
+		print_sep
+                bundle exec jekyll serve --verbose --trace
+                print_sep
+	else
+		run_cmd bundle exec jekyll serve --verbose --trace
+	fi
 }
 
 function link_draft()

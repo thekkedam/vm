@@ -4,6 +4,9 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 # Install all the dependencies for Jekyll
 RUN apk add --update bash build-base libffi-dev zlib-dev libxml2-dev libxslt-dev ruby ruby-dev nodejs
 
+# Install bundler
+RUN gem install bundler
+
 # Copy the Gemfile and Gemfile.lock into the image and run bundle install in a
 # way that will be cached
 WORKDIR /tmp 

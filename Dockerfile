@@ -1,12 +1,16 @@
-FROM debian:jessie
+FROM ubuntu:trusty
 MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 
 RUN apt-get update
 RUN apt-get -y upgrade
 
-RUN apt-get -y install ruby ruby-doc ruby-dev nodejs
+RUN apt-get -y install ruby ruby-dev make gcc nodejs
 
-RUN gem install bundler jekyll nokogiri 
+RUN gem install jekyll --no-rdoc --no-ri
+
+RUN gem install bundler
+
+RUN gem install github-pages --no-rdoc --no-ri
 
 WORKDIR /tmp 
 COPY deploy/Gemfile Gemfile

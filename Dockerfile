@@ -4,7 +4,7 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 RUN apt-get update
 RUN apt-get -y upgrade
 
-RUN apt-get install ruby ruby-doc ruby-dev nodejs
+RUN apt-get -y install ruby ruby-doc ruby-dev nodejs
 
 RUN gem install bundler jekyll nokogiri 
 

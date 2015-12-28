@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "`date`: TODO updating git and triggering new deploy "
+

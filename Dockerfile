@@ -9,7 +9,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C3173AA6 &
 RUN apt-get update
 RUN apt-get -y upgrade
 
-RUN apt-get -y \
+RUN apt-get -y install \
         ca-certificates \
         openssl \
         libssl-dev \

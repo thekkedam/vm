@@ -1,4 +1,3 @@
-trap exit_process 1 2 3 6 15
 
 function print_sep()
 {
@@ -26,6 +25,9 @@ function set_default()
 	fi
 	if [ -z $run_cmd_log_file ]; then
 		run_cmd_log_file="run-cmd.log"
+	fi
+	if [ -z $EXITFUN ]; then
+		EXITFUN="exit_process"
 	fi
 }
 
@@ -261,3 +263,5 @@ function link_draft()
 }
 
 set_default
+trap $EXITFUN 1 2 3 6 15
+

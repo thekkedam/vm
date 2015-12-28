@@ -6,6 +6,13 @@ COMMIT_MSG="Updated-$COMMIT_TIME"
 
 is_git=0
 
+function exit_process()
+{
+    echo "Exiting ..."
+    clean_old_logs
+    rm_proff_temp
+}
+
 if [ -f _scripts/bash_func ]; then
 	. _scripts/bash_func
 else

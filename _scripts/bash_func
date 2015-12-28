@@ -249,7 +249,7 @@ function rm_proff_temp()
 function site_run()
 {
 	echo "Run jekyll server ...."
-	bundle exec jekyll serve --verbose --trace
+	run_cmd bundle exec jekyll serve --verbose --trace
 }
 
 function link_draft()
@@ -258,7 +258,7 @@ function link_draft()
 		echo "The link present ..."
 	else
 		echo "Creting _draft link ..."
-		ln -s ../../../work-personal/_drafts .
+		run_cmd ln -s ../../../work-personal/_drafts .
 	fi 
 }
 

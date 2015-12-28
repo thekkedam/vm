@@ -18,7 +18,7 @@ _site/
 .vagrant
 
 # Gemfile
-#./Gemfile.lock
+Gemfile.lock
 
 # Temp blogger xml files
 blogger
@@ -27,12 +27,10 @@ blogger
 _drafts
 
 # vendor
-deploy/vendor
-deploy/.bundle
+vendor
+.bundle
 
 # Added by script - add other file before this.
 assets/docs/ref/W-meter-An_open-source_WLAN product_evaluation_framework.pdf
 run-cmd.log
-Gemfile.lock
 versions.json
-versions.json.back

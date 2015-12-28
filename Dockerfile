@@ -4,14 +4,6 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 # Install all the dependencies for Jekyll
 RUN apk add --update bash build-base libffi-dev zlib-dev libxml2-dev libxslt-dev ruby ruby-dev nodejs
 
-RUN gem install rdoc
-
-# Install Jekyll
-RUN gem install bundler jekyll --no-ri
-
-# Install nokogiri separately because it's special
-RUN gem install nokogiri -- --use-system-libraries 
-
 # Copy the Gemfile and Gemfile.lock into the image and run bundle install in a
 # way that will be cached
 WORKDIR /tmp 
@@ -19,6 +11,9 @@ COPY deploy/Gemfile Gemfile
 COPY deploy/Gemfile.lock Gemfile.lock
 COPY deploy/jekyll-serve jekyll-serve
 COPY deploy/versions.json versions.json
+
+# lets install all required gems
+RUN bundle install 
 
 # Copy source
 RUN mkdir -p /src

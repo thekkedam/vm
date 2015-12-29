@@ -19,6 +19,7 @@ http://creativecommons.org/licenses/by-nc-nd/4.0/
   - /assets/img/profile-photos
   - /assets/img/projects
   - /assets/img/vipintm-*.jpg
+
 - github source under and with
   - _data/
   - _posts/

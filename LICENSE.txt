@@ -1,7 +1,7 @@
-The content is Licebsed undet two catogory
+The content is Licensed undet two category
 
 ------------------------------------------------------------------------
-Catogory - 1
+Category - 1
 ------------------------------------------------------------------------
 
 Personal / propretry content of this work is licensed under 
@@ -69,7 +69,7 @@ you use the material.
 More : http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 
 ------------------------------------------------------------------------
-Catogory - 2
+Category - 2
 ------------------------------------------------------------------------
 
 Other source are Licensed under The MIT License (MIT)
@@ -95,3 +95,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+

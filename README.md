@@ -4,6 +4,14 @@ This site is based on [Yevgeniy Brikman Home Page](http://www.ybrikman.com).
 Check out [Migrating from Blogger to GitHub Pages and launching the new ybrikman.com](http://www.ybrikman.com/writing/2015/04/20/migrating-from-blogger-to-github-pages/)
 for background info.
 
+## This site is 
+
+1. Remix of [Yevgeniy Brikman](http://www.ybrikman.com), [Jonathan McGlone](http://jmcglone.com/), [jekyll-resume](htps://github.com/philipithomas/jekyll-resume) and [Post via web](https://github.com/vrypan/jekyll-post-via-web).
+1. Using icons [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
+1. Better writer by [Grammarly](https://app.grammarly.com/).
+1. IPv6, https support and made faster by [CloudFlare](https://www.cloudflare.com/).
+1. Images are served by [RawGit](http://rawgit.com/).
+
 # Quick start
 
 1. Use Git to clone this repo
@@ -27,14 +35,6 @@ On Linux:
 1. `git clone` this repo
 2. `docker-compose up`
 3. Go to `http://localhost:4000` to test 
-
-On OS X, using the [docker-osx-dev](https://github.com/brikis98/docker-osx-dev)
-project:
-
-1. `git clone` this repo
-2. `docker-osx-dev`
-3. `docker-compose up`
-4. Go to `http://dockerhost:4000` to test
 
 # Technologies
 

@@ -6,7 +6,7 @@ for background info.
 
 ## This site is 
 
-1. Remix of [Yevgeniy Brikman](http://www.ybrikman.com), [Jonathan McGlone](http://jmcglone.com/), [jekyll-resume](htps://github.com/philipithomas/jekyll-resume) and [Post via web](https://github.com/vrypan/jekyll-post-via-web).
+1. Remix of [Yevgeniy Brikman](http://www.ybrikman.com), [Jonathan McGlone](http://jmcglone.com/), [jekyll-resume](https://github.com/philipithomas/jekyll-resume) and [Post via web](https://github.com/vrypan/jekyll-post-via-web).
 1. Using icons [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 1. Better writer by [Grammarly](https://app.grammarly.com/).
 1. IPv6, https support and made faster by [CloudFlare](https://www.cloudflare.com/).

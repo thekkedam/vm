@@ -31,8 +31,5 @@ vendor
 .bundle
 
 # Added by script - add other file before this.
-assets/docs/ref/W-meter-An_open-source_WLAN product_evaluation_framework.pdf
 run-cmd.log
 versions.json
-Dockerfile.working
-Dockerfile.working2

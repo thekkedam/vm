@@ -114,17 +114,24 @@ function clean_old_logs()
 	clean_file versions.json
 	clean_file Gemfile.lock 
 	clean_file $run_cmd_log_file
+	clean_file commit.template
+}
+
+function git_commit_msg()
+{
+	echo $COMMIT_MSG > commit.template
 }
 
 function git_commit()
 {
+	git_commit_msg
 	if [ "$is_git" -eq 1 ]
 	then
 		for temp_file in $(git diff --name-only)
 		do
 			echo "Commiting $temp_file in git ..."
 			run_cmd git add $temp_file
-			run_cmd git commit $temp_file -m"$COMMIT_MSG"
+			run_cmd git commit $temp_file --file=commit.template
 		done
 	else
 		exit 1
@@ -133,6 +140,7 @@ function git_commit()
 
 function git_addf()
 {
+	git_commit_msg
         if [ "$is_git" -eq 1 ]
         then
 		temp_file="$1"
@@ -140,7 +148,7 @@ function git_addf()
                 then
                         echo "Adding $temp_file ..."
                         run_cmd git add "$temp_file"
-                        run_cmd git commit "$temp_file" -m"$COMMIT_MSG"
+                        run_cmd git commit "$temp_file" --file=commit.template
                 else
 			echo "Unable to find the $temp_file file .."
 		fi
@@ -230,6 +238,10 @@ function gem_update()
 
 function site_build()
 {
+	if [ ! -f ./versions.json ]; then
+		echo "Build with last updated version.json ..."
+		copy_file deploy/versions.json versions.json
+	fi
 	echo "Build jekyll site ..."
 	run_cmd bundle exec jekyll build --verbose --trace
 }

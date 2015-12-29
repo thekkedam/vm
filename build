@@ -25,24 +25,24 @@ fi
 link_draft
 if [ "$1" == "$update" ]
 then
-    get_version
-    gem_update
-    build_update
-    dep_update
-elif [ "$1" == "$site_test" ]
-then
     clean_old_logs
     rm_proff_temp
     get_version
     gem_update
+elif [ "$1" == "$site_test" ]
+then
+    clean_old_logs
+    rm_proff_temp
+    #get_version
+    #gem_update
     site_build
     run_htmlproof
 elif [ "$1" == "$site_run" ]
 then
    clean_old_logs
-   get_version
-   gem_update
    rm_proff_temp
+   #get_version
+   #gem_update
    site_run
 else
    echo "    Error in usage ..."

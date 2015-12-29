@@ -2,7 +2,11 @@
 
 WORKSPACE=$(pwd)
 COMMIT_TIME=$(date +"%m-%d-%Y-%H:%M")
-COMMIT_MSG="Updated-$COMMIT_TIME"
+
+COMMIT_MSG=$1
+if [ -z "$COMMIT_MSG" ]; then
+	COMMIT_MSG="Updated-$COMMIT_TIME"
+fi
 
 is_git=0
 
@@ -25,14 +29,20 @@ check_git
 link_draft
 
 clean_old_logs
-get_version
 
-gem_update
+#get_version
+#gem_update
+
 site_build
 make_diploy
 
 clean_old_logs
+
 check_new
 git_commit
 git_push
+
 clean_old_logs
+
+### END ###
+

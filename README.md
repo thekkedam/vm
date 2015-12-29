@@ -1,12 +1,17 @@
 # Vipin Madhavanunni
 
 This site is based on [Yevgeniy Brikman Home Page](http://www.ybrikman.com).
-Check out [Migrating from Blogger to GitHub Pages and launching the new ybrikman.com](http://www.ybrikman.com/writing/2015/04/20/migrating-from-blogger-to-github-pages/)
+Check out [Migrating from Blogger to GitHub Pages and launching 
+the new ybrikman.com](http://www.ybrikman.com/writing/2015/04/20/
+migrating-from-blogger-to-github-pages/)
 for background info.
 
 ## This site is 
 
-1. Remix of [Yevgeniy Brikman](http://www.ybrikman.com), [Jonathan McGlone](http://jmcglone.com/), [jekyll-resume](https://github.com/philipithomas/jekyll-resume) and [Post via web](https://github.com/vrypan/jekyll-post-via-web).
+1. Remix of [Yevgeniy Brikman](http://www.ybrikman.com), 
+[Jonathan McGlone](http://jmcglone.com/), 
+[jekyll-resume](https://github.com/philipithomas/jekyll-resume) 
+and [Post via web](https://github.com/vrypan/jekyll-post-via-web).
 1. Using icons [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 1. Better writer by [Grammarly](https://app.grammarly.com/).
 1. IPv6, https support and made faster by [CloudFlare](https://www.cloudflare.com/).
@@ -26,9 +31,9 @@ documentation for more info.
 # Docker quick start
 
 As an alternative to installing Ruby and Jekyll, if you're a user of
-[Docker](https://www.docker.com/) and [Docker 
-Compose](https://docs.docker.com/compose/), you can run a Docker image of 
-yevgeniy-brikman-homepage that has all the dependencies already setup for you.
+[Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/), 
+you can run a [Docker image](https://hub.docker.com/r/thekkedam/vm/)
+ that has all the dependencies already setup for you.
 
 On Linux:
 
@@ -61,4 +66,4 @@ On Linux:
 
 # License
 
-This code is released under the MIT License. See LICENSE.txt.
+See [LICENSE.txt](http://vm.thekkedam.org/LICENSE.txt).

@@ -3,7 +3,8 @@ MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
 
 # Install all the dependencies for Jekyll
 RUN apk add --update bash build-base libffi-dev zlib-dev libxml2-dev \
-			libxslt-dev ruby ruby-dev nodejs
+			libxslt-dev ruby ruby-dev ruby-io-console ruby-json \
+			yaml nodejs
 
 # let avoide rdoc
 RUN echo 'gem: --no-document' >> ~/.gemrc && \

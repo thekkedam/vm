@@ -1,3 +1,5 @@
 User-agent: *
 Disallow: /unknown/
-Disallow: /google97d57224ec2ad433.html
+Disallow: skip.html
+Disallow: 404.html
+Disallow: cms.html

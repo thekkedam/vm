@@ -174,12 +174,17 @@ function add_ingnore()
 {
 	temp_file="$1"
 	echo "Adding $temp_file to ingnore ..."
-	if [ -f $WORKSPACE/.gitignore ]
+	if [ -f .gitignore ]
 	then
-		echo "$temp_file" >> $WORKSPACE/.gitignore
+		is_tag=$(cat .gitignore | grep "# Added by script - add other file before this." | wc -l)
+		if [ "$is_tag" -eq "0" ]
+		then
+			echo "# Added by script - add other file before this." >> .gitignore
+		fi
+		echo "$temp_file" >> .gitignore
 	else
-		echo "# Added by script - add other file before this." >> $WORKSPACE/.gitignore
-		echo "$temp_file" >> $WORKSPACE/.gitignore
+		echo "# Added by script - add other file before this." >> .gitignore
+		echo "$temp_file" >> .gitignore
 	fi
 }
 
@@ -201,12 +206,12 @@ function check_new()
 	IFS=$'\n'
 	for temp_file in $(git ls-files --others --exclude-standard)
 	do
-                if [ -f $WORKSPACE/.gitignore ]
+                if [ -f .gitignore ]
                 then    
-                        isFile=$(cat $WORKSPACE/.gitignore | grep -v "^ *\(#.*\|\)$" | grep "$temp_file" | wc -l)
+                        isFile=$(cat .gitignore | grep -v "^ *\(#.*\|\)$" | grep "$temp_file" | wc -l)
                 else
-                        echo "# Added by script - add other file before this." >> $WORKSPACE/.gitignore
-                        echo "$temp_file" >> $WORKSPACE/.gitignore
+                        echo "# Added by script - add other file before this." >> .gitignore
+                        echo "$temp_file" >> .gitignore
                         isFile="0"
                 fi
 		if [ "$isFile" -eq "0" ]

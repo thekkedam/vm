@@ -30,8 +30,6 @@ _drafts
 vendor
 .bundle
 
-# AAdded by script - add other file before this.
+# Added by script - add other file before this.
 run-cmd.log
 versions.json
-# Added by script - add other file before this.
-help

@@ -66,4 +66,4 @@ On Linux:
 
 # License
 
-See [LICENSE.txt](http://vm.thekkedam.org/LICENSE.txt).
+See [LICENSE](http://vm.thekkedam.org/LICENSE.html).

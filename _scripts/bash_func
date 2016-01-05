@@ -260,6 +260,10 @@ function rm_proff_temp()
 
 function site_run()
 {
+        if [ ! -f ./versions.json ]; then
+                echo "Build with last updated version.json ..."
+                copy_file deploy/versions.json versions.json
+        fi
 	echo "Run jekyll server ...."
         if [ "$run_cmd_debug" -eq "1" ]; then
 		print_sep

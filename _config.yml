@@ -128,6 +128,9 @@ jekyll-mentions:
 # Exclude personal
 exclude:
   - _drafts
+  - build
+  - update
+  - _toolScripts
   - skip.html
   - deploy
 

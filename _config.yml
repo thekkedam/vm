@@ -134,6 +134,7 @@ exclude:
   - _toolScripts
   - skip.html
   - deploy
+  - vendor
 
 # include
 include:

@@ -116,6 +116,7 @@ sass:
   style: :compressed  
 highlighter: pygments
 timezone: 'Europe/Berlin'
+production: true
 
 # Need to change this
 #feed:

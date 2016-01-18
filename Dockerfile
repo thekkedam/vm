@@ -24,6 +24,8 @@ WORKDIR /tmp
 COPY deploy/Gemfile Gemfile
 COPY deploy/Gemfile.lock Gemfile.lock
 COPY deploy/versions.json versions.json
+COPY deploy/jekyll-serve jekyll-serve
+RUN chmod 755 jekyll-serve
 
 # lets install all required gems
 RUN bundle config build.nokogiri --use-system-libraries 
@@ -39,6 +41,8 @@ RUN find / -type f -iname \*.apk-new -delete && \
 # Copy source
 RUN mkdir -p /src
 VOLUME ["/src"]
+COPY deploy/Gemfile /src/Gemfile
+COPY deploy/versions.json /src/versions.json
 COPY deploy/jekyll-serve /src/jekyll-serve
 RUN chmod 755 /src/jekyll-serve
 WORKDIR /src

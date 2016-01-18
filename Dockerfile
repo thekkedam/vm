@@ -38,6 +38,9 @@ RUN mkdir -p /src
 VOLUME ["/src"]
 WORKDIR /src
 ADD . /src
+COPY deploy/Gemfile Gemfile
+COPY deploy/jekyll-serve jekyll-serve
+COPY deploy/versions.json versions.json
 
 # Jekyll runs on port 4000 by default
 EXPOSE 4000

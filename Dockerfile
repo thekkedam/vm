@@ -1,5 +1,9 @@
 FROM alpine:latest
 MAINTAINER Vipin Madhavanunni <vipintm@gmail.com>
+LABEL site="vm.thekkedam.org" \
+	version="1.0" \
+	description="This is personal home page of Vipin Madhavanunni"	\
+	source="https://github.com/thekkedam/vm"
 
 # Install all the dependencies for Jekyll
 RUN apk add --update bash build-base libffi-dev zlib-dev libxml2-dev \
@@ -19,7 +23,6 @@ RUN gem install bundler
 WORKDIR /tmp 
 COPY deploy/Gemfile Gemfile
 COPY deploy/Gemfile.lock Gemfile.lock
-COPY deploy/jekyll-serve jekyll-serve
 COPY deploy/versions.json versions.json
 
 # lets install all required gems
@@ -36,11 +39,10 @@ RUN find / -type f -iname \*.apk-new -delete && \
 # Copy source
 RUN mkdir -p /src
 VOLUME ["/src"]
+COPY deploy/jekyll-serve /src/jekyll-serve
+RUN chmod 755 /src/jekyll-serve
 WORKDIR /src
 ADD . /src
-COPY deploy/Gemfile Gemfile
-COPY deploy/jekyll-serve jekyll-serve
-COPY deploy/versions.json versions.json
 
 # Jekyll runs on port 4000 by default
 EXPOSE 4000

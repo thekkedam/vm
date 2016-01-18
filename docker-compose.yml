@@ -4,3 +4,12 @@ web:
     - .:/src
   ports:
     - "4000:4000"
+  dns_search: 
+    - vm.thekkedam.org
+    - dd.thekkedam.org
+    - thekkedam.org
+  entrypoint:
+    - /bin/sh cp deploy/jekyll-serve . 
+    - /bin/sh cp deploy/Gemfile .
+    - /bin/sh cp deploy/versions.json .
+

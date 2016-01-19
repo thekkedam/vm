@@ -52,4 +52,4 @@ ADD . /src
 EXPOSE 4000
 
 # Run jekyll serve
-CMD ["./jekyll-serve"]
+CMD ["/src/jekyll-serve"]

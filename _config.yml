@@ -1,7 +1,7 @@
 # Website settings
-baseurl: "/"
-base_url: "/"
-url: "http://vm.thekkedam.org"
+baseurl: "https://vm.thekkedam.org"
+base_url: "https://vm.thekkedam.org"
+url: "https://vm.thekkedam.org"
 domain: "vm.thekkedam.org"
 
 # Internal nav

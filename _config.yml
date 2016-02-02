@@ -1,5 +1,5 @@
 # Website settings
-baseurl: "https://vm.thekkedam.org"
+baseurl: "/"
 base_url: "https://vm.thekkedam.org"
 url: "https://vm.thekkedam.org"
 domain: "vm.thekkedam.org"

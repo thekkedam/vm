@@ -115,7 +115,7 @@ permalink: "/writing/:year/:month/:day/:title"
 sass:
   sass_dir: "/assets/css"
   style: :compressed  
-highlighter: pygments
+highlighter: rouge
 timezone: 'Europe/Berlin'
 production: true
 

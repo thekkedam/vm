@@ -3,6 +3,7 @@ baseurl: "/"
 base_url: "https://vm.thekkedam.org"
 url: "https://vm.thekkedam.org"
 domain: "vm.thekkedam.org"
+production: true
 
 # Internal nav
 nav:

@@ -4,3 +4,6 @@ Disallow: skip.html
 Disallow: 404.html
 Disallow: cms.html
 Disallow: c216c7bdb040027e864ad787219afe02fed10df7.html
+Disallow: _config.yml
+Disallow: nortonsw_26518600-9b7f-0.html
+Disallow: php

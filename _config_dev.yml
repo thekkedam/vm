@@ -1,7 +1,0 @@
-# Website settings
-baseurl: "/"
-base_url: "/"
-url: "http://vm.thekkedam.org"
-domain: "vm.thekkedam.org"
-production: false
-

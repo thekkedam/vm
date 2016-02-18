@@ -148,4 +148,4 @@ gems:
   - jekyll-mentions
   - jekyll-gist
   - jekyll-paginate
-  - pygments.rb
+  - rouge

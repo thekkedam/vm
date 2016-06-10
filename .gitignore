@@ -30,6 +30,9 @@ _drafts
 vendor
 .bundle
 
+# VScode
+.vscode/
+
 # Added by script - add other file before this.
 run-cmd.log
 bash_func.lock

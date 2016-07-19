@@ -47,6 +47,7 @@ Thesis:
     degree: Master
     year: 2010
     pdf: /assets/docs/thesis/Analysis_of_Open_Source_Drivers_for_IEEE_802.11_WLANs_Vipin_Madhavanunni.pdf
+    presentation: /assets/docs/thesis/Analysis_of_open_source_drivers_for_IEEE 802.11_WLANs_pre.pdf
   - title: Detection and analysis of burst signal from Laser Doppler velocimeter
     id: bachelor
     organization: Bharathidasan University

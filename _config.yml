@@ -71,10 +71,14 @@ contact_urls:
     url: "https://www.xing.com/profile/Vipin_Madhavanunni"
     label: "Xing"
     icon: "xing-square"
+  researchGate:
+    url: "https://www.researchgate.net/profile/Vipin_Madhavanunni"
+    label: "ResearchGate"
+    icon: "h-square"
   researchID:
     url: "http://www.researcherid.com/rid/K-5743-2016"
     label: "ResearchID"
-    icon: "pencil-square"
+    icon: "minus-square"
   scholar:
     url: "https://scholar.google.de/citations?user=LhcD4BMAAAAJ&hl=en"
     label: "GoogleScholar"

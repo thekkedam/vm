@@ -71,6 +71,14 @@ contact_urls:
     url: "https://www.xing.com/profile/Vipin_Madhavanunni"
     label: "Xing"
     icon: "xing-square"
+  researchID:
+    url: "http://www.researcherid.com/rid/K-5743-2016"
+    label: "ResearchID"
+    icon: "pencil-square"
+  scholar:
+    url: "https://scholar.google.de/citations?user=LhcD4BMAAAAJ&hl=en"
+    label: "GoogleScholar"
+    icon: "plus-square"
   angel:
     url: "https://angel.co/vipintm"
     label: "angel.co"

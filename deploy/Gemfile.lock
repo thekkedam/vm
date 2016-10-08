@@ -143,3 +143,6 @@ DEPENDENCIES
   jekyll-sitemap (= 0.10.0)
   json
   rouge (= 1.11.1)
+
+BUNDLED WITH
+   1.11.2

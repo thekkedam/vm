@@ -13,6 +13,7 @@ nav:
     posts: "/writing"
 #   speaking: "/speaking"
     photos: "/photos"
+    contact: "/contact"
     home: "/"
   writing:
     favorite: "/writing/popular"

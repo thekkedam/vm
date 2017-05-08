@@ -1,10 +1,7 @@
 # Vipin Madhavanunni
 
 This site is based on [Yevgeniy Brikman Home Page](http://www.ybrikman.com).
-Check out [Migrating from Blogger to GitHub Pages and launching 
-the new ybrikman.com](http://www.ybrikman.com/writing/2015/04/20/
-migrating-from-blogger-to-github-pages/)
-for background info.
+Check out [Migrating from Blogger to GitHub Pages and launching the new ybrikman.com](http://www.ybrikman.com/writing/2015/04/20/migrating-from-blogger-to-github-pages/) for background info.
 
 ## This site is 
 
@@ -66,4 +63,4 @@ On Linux:
 
 # License
 
-See [LICENSE](http://vm.thekkedam.org/LICENSE.html).
+See [LICENSE](http://vm.thekkedam.org/LICENSE/).

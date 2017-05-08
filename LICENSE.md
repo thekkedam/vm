@@ -8,7 +8,7 @@ nav_item: home
 
 The content is Licensed undet two category
 
-##Category - i
+## Category - i
 
 Personal / propretry content of this work is licensed under 
 a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
@@ -38,33 +38,33 @@ a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Li
 Attribution-NonCommercial-NoDerivatives
 4.0 International License.**
 
-####You are free to:
+#### You are free to:
 
 **Share** — copy and redistribute the material in any medium or format
 The licensor cannot revoke these freedoms as long as you follow the 
 license terms.
 
-####Under the following terms:
+#### Under the following terms:
 
-#####Attribution — 
+##### Attribution — 
 You must give appropriate credit, provide a link to the 
 license, and indicate if changes were made. You may do so in any 
 reasonable manner, but not in any way that suggests the licensor 
 endorses you or your use.
 
-#####NonCommercial — 
+##### NonCommercial — 
 You may not use the material for commercial purposes.
 
-#####NoDerivatives — 
+##### NoDerivatives — 
 If you remix, transform, or build upon the material,
  you may not distribute the modified material.
 
-#####No additional restrictions — 
+##### No additional restrictions — 
 You may not apply legal terms or 
 technological measures that legally restrict others from doing 
 anything the license permits.
 
-####Notices:
+#### Notices:
 
 You do not have to comply with the license for elements of the 
 material in the public domain or where your use is permitted 
@@ -76,11 +76,11 @@ you use the material.
 
 More : [http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode](http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode)
 
-##Category - ii
+## Category - ii
 
 Other source are Licensed under The MIT License (MIT)
 
-###The MIT License (MIT)
+### The MIT License (MIT)
 
 Copyright (c) 2015 Vipin Madhavanunni 
 

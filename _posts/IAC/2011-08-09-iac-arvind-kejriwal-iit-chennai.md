@@ -7,14 +7,14 @@ tags:
 - India Against Corruption
 - Chennai
 modified_time: '2015-12-11T06:01:35.245+05:30'
+thumbnail: https://img.youtube.com/vi/2CHcKlIsvAQ/hqdefault.jpg
+embed_url: "https://www.youtube.com/embed/2CHcKlIsvAQ?list=PL3385A228B5718E8A"
 blogger_id: tag:blogger.com,1999:blog-4375898741014744078.post-7236992415737238356
 blogger_orig_url: http://allinone-vipintm.blogspot.com/2011/08/iac-arvind-kejriwal-iit-chennai.html
 ---
 
-<object width="480" height="385"><param name="movie" 
-value="http://www.youtube.com/p/3385A228B5718E8A?version=3&hl=en_US&fs=1"></param><param 
-name="allowFullScreen" value="true"></param><param name="allowscriptaccess" 
-value="always"></param><embed 
-src="http://www.youtube.com/p/3385A228B5718E8A?version=3&hl=en_US&fs=1" 
-type="application/x-shockwave-flash" width="480" height="385" 
-allowscriptaccess="always" allowfullscreen="true"></embed></object> 
+
+{% include iframe.html url=page.embed_url %}
+
+If not playing open in  [Youtube](https://www.youtube.com/watch?v=2CHcKlIsvAQ&list=PL3385A228B5718E8A) 
+

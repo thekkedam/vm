@@ -11,4 +11,4 @@ blogger_id: tag:blogger.com,1999:blog-4375898741014744078.post-72369924157372383
 blogger_orig_url: http://allinone-vipintm.blogspot.com/2011/08/iac-arvind-kejriwal-iit-chennai.html
 ---
 
-{% include iframe-figure.html url="//www.youtube.com/embed/2CHcKlIsvAQ?list=PL3385A228B5718E8A" link="https://www.youtube.com/watch?v=2CHcKlIsvAQ&list=PL3385A228B5718E8A" caption="IAC - Arvind Kejriwal @ IIT Chennai" %}
+{% include iframe-figure.html url="https://www.youtube.com/embed/2CHcKlIsvAQ?list=PL3385A228B5718E8A" link="https://www.youtube.com/watch?v=2CHcKlIsvAQ&list=PL3385A228B5718E8A" caption="IAC - Arvind Kejriwal @ IIT Chennai" %}

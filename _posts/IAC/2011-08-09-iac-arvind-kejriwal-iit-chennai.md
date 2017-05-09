@@ -12,9 +12,9 @@ blogger_orig_url: http://allinone-vipintm.blogspot.com/2011/08/iac-arvind-kejriw
 ---
 
 <object width="480" height="385"><param name="movie" 
-value="http://www.youtube.com/p/3385A228B5718E8A?version=3&hl=en_US&fs=1"></param><param 
-name="allowFullScreen" value="true"></param><param name="allowscriptaccess" 
-value="always"></param><embed 
+value="http://www.youtube.com/p/3385A228B5718E8A?version=3&hl=en_US&fs=1"><param 
+name="allowFullScreen" value="true"><param name="allowscriptaccess" 
+value="always"><embed 
 src="http://www.youtube.com/p/3385A228B5718E8A?version=3&hl=en_US&fs=1" 
 type="application/x-shockwave-flash" width="480" height="385" 
-allowscriptaccess="always" allowfullscreen="true"></embed></object> 
+allowscriptaccess="always" allowfullscreen="true"></object> 

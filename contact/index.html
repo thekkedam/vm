@@ -5,8 +5,6 @@ header_title: Contact me
 include_header: contact_header.html
 nav_item: contact
 ---
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-
 <div class="clearfix mxn2">
   <div class="col sm-col-9 px2">
     <p>
@@ -31,14 +29,15 @@ nav_item: contact
       <br>
       <input type="text" name="_gotcha" style="display:none" />
       <br>
-      <input type="submit" value="Send">
+      <script type="application/javascript"> 
+        function getIP(json) { 
+          document.write("Sending from: ", json.ip); 
+          }
+      </script>
+      <input type="submit" value="Send"> 
       <br>
     </form>
-    <script type="application/javascript">
-        function getIP(json) {
-        document.write("Submiting from: ", json.ip);
-        }
-    </script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
     <script>
       var contactform =  document.getElementById('contactform');
       contactform.setAttribute('action', '//formspree.io/' + 'vipmadha' + '@' + 'gmail' + '.' + 'com');

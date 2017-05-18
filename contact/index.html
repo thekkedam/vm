@@ -5,6 +5,7 @@ header_title: Contact me
 include_header: contact_header.html
 nav_item: contact
 ---
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 
 <div class="clearfix mxn2">
   <div class="col sm-col-9 px2">
@@ -31,6 +32,11 @@ nav_item: contact
       <input type="text" name="_gotcha" style="display:none" />
       <br>
       <input type="submit" value="Send">
+      <script type="application/javascript">
+  	function getIP(json) {
+    	document.write("From: ", json.ip);
+  	}
+      </script>
       <br>
     </form>
     <script>

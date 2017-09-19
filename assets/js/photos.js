@@ -40,6 +40,8 @@
   };
 
   var titlesOfAlbumsToSkip = ["Profile Photos", "Photos from posts", "Scrapbook Photos"];
+  var dateRegex1 = new RegExp("\\d\\d?/\\d\\d?/\\d\\d");
+  var dateRegex2 = new RegExp("\\d\\d?-\\d\\d?-\\d\\d");
 
   var showAlbums = function(albums) {
     var albumData = _.map(albums.feed.entry, function(album) {
@@ -51,7 +53,8 @@
     });
 
     var filteredAlbumData = _.reject(albumData, function(album) {
-      return _.contains(titlesOfAlbumsToSkip, album.title);
+      return _.contains(titlesOfAlbumsToSkip, album.title) || 
+	dateRegex1.test(album.title) || dateRegex2.test(album.title);
     });
 
     var template = _.template($('#albums-template').html());

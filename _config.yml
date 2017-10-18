@@ -155,7 +155,7 @@ include:
   - ".htaccess"
 
 # Plugins (GitHub Pages only support a few)
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-mentions

@@ -13,7 +13,7 @@
     {% endfor %}
     <!-- Pages -->
     {% for page in site.pages %}
-    {% if page.layout != nil and page.layout != 'feed' and page.permalink != '/404.html' %}
+    {% if page.layout != null and page.layout != 'feed' and page.permalink != '/404.html' %}
     <url>
         <loc>{% include canonical-url.html url=page.url %}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
@@ -24,7 +24,7 @@
     {% endfor %}
     <!-- Project documents -->
     {% for project in site.data.projects %}
-    {% if project.doc_url != nil and project.doc_url contains "/assets" first %}
+    {% if project.doc_url != null and project.doc_url contains "/assets" first %}
     <url>
         <loc>{% include canonical-url.html url=project.doc_url %}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
